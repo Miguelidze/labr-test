@@ -1,0 +1,122 @@
+.harrast {
+  &__img {
+    width: 100%;
+    aspect-ratio: auto;
+    margin-bottom: 60px;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    &--sm {
+      margin-bottom: 0;
+    }
+    &--m32{
+      margin-bottom: 32px;
+    }
+
+  }
+  // .harrast__title
+
+  &__title {
+    display: flex;
+    // margin-top: 60px;
+    margin-bottom: 32px;
+    &--right{
+      justify-content: flex-end;
+      @media screen and (max-width: $tabletWidth){
+        justify-content: flex-start;
+      }
+    }
+    
+  }
+
+  // .harrast__text
+
+  &__text {
+    font-family: $secondFont;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+    @media screen and (max-width: $tabletWidth) {
+      flex-direction: column;
+    }
+    &--column{
+      flex-direction: column;
+    }
+    &--ac{
+      align-items: center;
+    }
+  }
+  &__item {
+    display: flex;
+    flex: 0 0 47%;
+    flex-direction: column;
+    justify-content: space-between;
+    &:not(:last-child){
+      @media screen and (max-width: $tabletWidth) {
+      margin-bottom: 32px;
+    }
+    }
+    &--fl30{
+      flex: 0 0 30%;
+    }
+    &--fl67{
+      flex: 0 0 67%;
+    }
+    
+  }
+  // .harrast__link-wrap
+
+  &__link-wrap {
+    &--right{
+
+    }
+  }
+
+  // .harrast__link
+
+  &__link {
+     display: flex;
+    justify-content: flex-end;
+    &--start{
+      justify-content: flex-start;
+    }
+  }
+
+  // .harrast__arrow
+
+  &__arrow {
+   width: 45px;
+   height: 25px;
+   margin-right: 40px;
+   transition: all 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  // .harrast__link-text
+
+  &__link-text {
+    text-decoration: underline;
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $mainFontColor;
+  }
+}

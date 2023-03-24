@@ -1,0 +1,605 @@
+    <!DOCTYPE html>
+<html lang="est">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="#" type="image/svg+xml">
+    <link rel="icon" href="assets/img/logo.png" type="image/png">
+    <title>Labradorid</title>
+<script defer src="js/vendors-node_modules_bootstrap_dist_js_bootstrap_esm_js-node_modules_jquery_dist_jquery_js.js"></script><script defer src="js/main.js"></script><link href="css/main.css" rel="stylesheet"></head>
+
+<body>
+    <div class="page-content-wrapper">
+        <header id="home" class="header">
+            <container class="container">
+                <div class="header__logo ibg ibg--contain">
+                    <img src="assets/img/logo.png" alt="logotype" class="logo__img">
+                    <a class="header__logo-link" href="index.html#home"></a>
+                </div>
+                <div class="header__nav">
+                    <div class="navigation__wrap">
+                        <ul class="navigation__list">
+                            <li id="home-a" class="navigation__item">
+                                <a href="index.html#home" class="navigation__link">
+                                    <p class="navigation__link-text">Home</p>
+                                </a>
+                            </li>
+                            <li id="kutsikad-a" class="navigation__item">
+                                <a href="../kutsikad.html" class="navigation__link">
+                                    <p class="navigation__link-text">Kutsikad</p>
+                                </a>
+                            </li>
+                            <li id="uudised-a" class="navigation__item">
+                                <a href="../uudised.html" class="navigation__link">
+                                    <p class="navigation__link-text">uudised</p>
+                                </a>
+                            </li>
+                            <li id="tulemused-a" class="navigation__item">
+                                <a href="../tulemused.html" class="navigation__link">
+                                    <p class="navigation__link-text">tulemused</p>
+                                </a>
+                            </li>
+                            <li id="harrastused-a" class="navigation__item">
+                                <a href="../harrastused.html" class="navigation__link">
+                                    <p class="navigation__link-text">harrastused</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-links__wrap">
+                        <div class="social-links__list">
+                            <div class="social-links__item">
+                                <img class="social-links__img" src="assets/img/instagram.png" alt=""
+                                    style="width:24px; height: 24px">
+                                <a href="" class="social-links__link "></a>
+                            </div>
+                            <div class="social-links__item">
+                                <img class="social-links__img" src="assets/img/facebook.png" alt=""
+                                    style="width:26px; height: 26px">
+                                <a href="" class="social-links__link"></a>
+                            </div>
+                            <div class="social-links__item">
+                                <img class="social-links__img" src="assets/img/mail.png" alt=""
+                                    style="width:24px; height: 20px">
+                                <a href="" class="social-links__link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang__wrap">
+                        <div class="lang active" id="lang-est">
+                            <img src="assets/img/flag-est.png" alt="est">
+                        </div>
+                        <div class="lang" id="lang-ru">
+                            <img src="assets/img/flag-rus.png" alt="rus">
+                        </div>
+                        <div class="lang" id="lang-en">
+                            <img src="assets/img/flag-en.png" alt="en">
+                        </div>
+                        <div class="lang__list">
+                            <div class="lang__item selected" data-lang-id="lang-est">
+                                <img src="assets/img/flag-est.png" alt="">
+                            </div>
+                            <div class="lang__item" data-lang-id="lang-ru">
+                                <img src="assets/img/flag-rus.png" alt="">
+                            </div>
+                            <div class="lang__item" data-lang-id="lang-en">
+                                <img src="assets/img/flag-en.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-btn__wrap">
+                    <div class="burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="mobile__header">
+                    <div class="mobile__navigation">
+                        <div class="mobile__social-links">
+                            <div class="mobile__social-links__item">
+                                <img class="mobile__social-links__img" src="assets/img/instagram.png" alt=""
+                                    style="width:24px; height: 24px">
+                                <a href="" class="mobile__social-links__link"></a>
+                            </div>
+                            <div class="mobile__social-links__item">
+                                <img class="mobile__social-links__img" src="assets/img/facebook.png" alt=""
+                                    style="width:26px; height: 26px">
+                                <a href="" class="mobile__social-links__link"></a>
+                            </div>
+                            <div class="mobile__social-links__item">
+                                <img class="mobile__social-links__img" src="assets/img/mail.png" alt=""
+                                    style="width:24px; height: 20px">
+                                <a href="" class="mobile__social-links__link"></a>
+                            </div>
+                        </div>
+                        <div class="mobile__nav">
+                            <div class="mobile__nav__wrap">
+                                <ul class="mobile__nav__list">
+                                    <li id="home-a" class="mobile__nav_item">
+                                        <a href="index.html#main" class="mobile__nav__link">
+                                            <p class="mobile__nav__link-text">Home</p>
+                                        </a>
+                                    </li>
+                                    <li id="kutsikad-a" class="mobile__nav_item">
+                                        <a href="../kutsikad.html" class="mobile__nav__link">
+                                            <p class="mobile__nav__link-text">Kutsikad</p>
+                                        </a>
+                                    </li>
+                                    <li id="uudised-a" class="mobile__nav_item">
+                                        <a href="../uudised.html" class="mobile__nav__link">
+                                            <p class="mobile__nav__link-text">Uudised</p>
+                                        </a>
+                                    </li>
+                                    <li id="tulemused-a" class="mobile__nav_item">
+                                        <a href="../tulemused.html" class="mobile__nav__link">
+                                            <p class="mobile__nav__link-text">Tulemused</p>
+                                        </a>
+                                    </li>
+                                    <li id="harrastused-a" class="mobile__nav_item">
+                                        <a href="../harrastused.html" class="mobile__nav__link">
+                                            <p class="mobile__nav__link-text">Harrastused</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mobile__lang">
+                            <div class="mobile__lang__list">
+                                <div class="mobile__lang__item" data-lang-id="lang-est">
+                                    <img src="assets/img/flag-est.png" alt="est">
+                                </div>
+                                <div class="mobile__lang__item" data-lang-id="lang-ru">
+                                    <img src="assets/img/flag-rus.png" alt="rus">
+                                </div>
+                                <div class="mobile__lang__item" data-lang-id="lang-en">
+                                    <img src="assets/img/flag-en.png" alt="en">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </container>
+        </header>
+        <section class="uhing">
+            <div class="uhing-bcg ibg ibg--cover">
+                <img src="assets/img/uhing.jpg" alt="uhing">
+            </div>
+            <div class="def-container__info--mob">
+                <h1 class="def-container__title text--XXXL">Ühing</h1>
+                <p class="def-container__text">
+                    Eesti Labradori Retriiverite Tõuühing (ELRÜ) ühendab isikuid, kelle tegevus või huvid on seotud
+                    labradori
+                    retriiveri
+                    tõugu koertega.
+                </p>
+            </div>
+        </section>
+        <section class="def-container__wrap">
+            <div class="def-container">
+                <div class="def-container__info">
+                    <h1 class="def-container__title text--XXXL">Ühing</h1>
+                    <p class="def-container__text">
+                        Eesti Labradori Retriiverite Tõuühing (ELRÜ) ühendab isikuid, kelle tegevus või huvid on seotud
+                        labradori retriiveri
+                        tõugu koertega.
+                    </p>
+                </div>
+                <div class="main-nav__wrap">
+    <div class="nav">
+        <div class="nav__item nav__item--br">
+            <div class="nav__links">
+                <div  class="links__title">
+                    <a id="uhing" href="../uhing.html" class="title__text">Ühing</a>
+                </div>
+                <div class="links__link">
+                    <a id="connect" href="../connect.html" class="link__text">Liikmeks astumine</a>
+                </div>
+                <div class="links__link">
+                    <a id="rules" href="../rules.html" class="link__text">Põhikiri</a>
+                </div>
+                <div class="links__link">
+                    <a id="documents" href="../documents.html" class="link__text">Dokumendid</a>
+                </div>
+            </div>
+            <div class="nav__more">
+                <a href="../uhing.html" class="more__link">
+                    <img src="assets/img/main-arrow.png" alt="arrow" class="more__picture">
+                </a>
+            </div>
+        </div>
+        <div class="nav__item nav__item--rd">
+            <div class="nav__links">
+                <div class="links__title">
+                    <a id="labrador" href="../toust.html" class="title__text">labrador</a>
+                </div>
+                <div class="links__link">
+                    <a id="toust" href="../toust.html" class="link__text">Tõust</a>
+                </div>
+                <div class="links__link">
+                    <a id="toustandard" href="../toustandard.html" class="link__text">Tõustandard</a>
+                </div>
+                <div class="links__link">
+                    <a id="tervis" href="../tervis.html" class="link__text">Tervis</a>
+                </div>
+            </div>
+            <div class="nav__more">
+                <a href="" class="more__link">
+                    <img src="assets/img/main-arrow.png" alt="" class="more__picture">
+                </a>
+            </div>
+        </div>
+        <div class="nav__item nav__item--bl">
+            <div class="nav__links">
+                <div class="links__title">
+                    <a id="uritused" href="../uritused.html" class="title__text">Üritused</a>
+                </div>
+                <div class="links__link">
+                    <a id="naitused" href="../naitused.html" class="link__text">Näitused</a>
+                </div>
+                <div class="links__link">
+                    <a id="koolitused" href="../koolitused.html" class="link__text">Koolitused</a>
+                </div>
+                <div class="links__link">
+                    <a id="toukatse" href="../toukatse.html" class="link__text">Tõukatse</a>
+                </div>
+            </div>
+            <div class="nav__more">
+                <a href="../uritused.html" class="more__link">
+                    <img src="assets/img/main-arrow.png" alt="" class="more__picture">
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="accordion-menu">
+        <div>
+            <div class="accordion-item accordion-item--br dropdownlink" aria-hidden="true">
+                <div class="accordion-header">
+                    <a id="uhing-a" href="../uhing.html">
+                        Ühing
+                    </a>
+                </div>
+                <img class="accordion-arrow" src="assets/img/arrow-down.png" alt="arrow">
+            </div>
+            <ul class="submenuItems submenuItems--br">
+                <li><a id="connect-a" class="submenuItems__link" href="../connect.html">Liikmeks astumine</a></li>
+                <li><a id="rules-a" class="submenuItems__link" href="../rules.html">Põhikiri</a></li>
+                <li><a id="documents-a" class="submenuItems__link" href="../documents.html">Dokumendid</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="accordion-item accordion-item--rd dropdownlink" aria-hidden="true">
+                <div class="accordion-header">
+                    <a href="../toust">
+                        labrador
+                    </a>
+                </div>
+                <img class="accordion-arrow" src="assets/img/arrow-down.png" alt="arrow">
+            </div>
+            <ul class="submenuItems submenuItems--rd">
+                <li><a id="toust-a" class="submenuItems__link" href="../toust.html">Tõust</a></li>
+                <li><a id="toustandard-a" class="submenuItems__link" href="../toustandard.html">Tõustandard</a></li>
+                <li><a id="tervis-a" class="submenuItems__link" href="../tervis.html">Tervis</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="accordion-item accordion-item--bl dropdownlink" aria-hidden="true">
+                <div class="accordion-header">
+                    <a id="uritused-a" href="../uritused.html">
+                        Üritused
+                    </a>
+                </div>
+                <img class="accordion-arrow" src="assets/img/arrow-down.png" alt="arrow">
+            </div>
+            <ul class="submenuItems submenuItems--bl">
+                <li><a id="naitused-a" class="submenuItems__link" href="../naitused.html">Näitused</a></li>
+                <li><a id="koolitused-a" class="submenuItems__link" href="../koolitused.html">Koolitused</a></li>
+                <li><a id="toukatse-a" class="submenuItems__link" href="../toukatse.html">Tõukatse</a></li>
+            </ul>
+        </div>
+    </section>
+</div>
+                <div id="info" data-current-id="uhing" data-main-menu-current-id="uhing-a"></div>
+            </div>
+            <div class="def-container__content">
+                <div class="dfcontent__item dfcontent__item--mob">
+                    <div class="dfcontent__img ibg ibg--cover">
+                        <img src="assets/img/uhing-man.png" alt="">
+                    </div>
+                    <div class="dfcontent__info">
+                        <h2 class="dfcontent__info-title">Ühing</h2>
+                        <p class="dfcontent__info-text">
+                            Ühing loodi 22.juunil 2014.a ning kanti mittetulundusühingute ja sihtasutuste registrisse
+                            13.augustil 2014.a.
+                        </p>
+                        <p class="dfcontent__info-text">
+                            Alates 14.augustist 2014.a on Eesti Labradori Retriiverite Tõuühing Eesti Kennelliidu liige.
+                        </p>
+                        <button class="dfcontent__info-btn dfcontent__info-btn--red">Join us</button>
+                    </div>
+                </div>
+                <div class="dfcontent__item">
+                    <div class="dfcontent__descr">
+                        <div class="descr__item">
+                            <div class="descr__content">
+                                <p class="descr__text">
+                                    ELRÜ eesmärgiks on kaasa aidata labradori retriiveri tõugu koerte kasvatamisele,
+                                    aretamisele ja pidamisele ning ühendada
+                                    ja esindada labradori retriiveritega seotud isikuid. Ühing korraldab erinäitusi,
+                                    retriiverite tõuomaseid katseid ja
+                                    koolitusi ning muid üritusi.
+                                </p>
+                            </div>
+                            <div class="descr__content">
+                                <p class="descr__text">
+                                    ELRÜ tegevusalad on põhikirja kohaselt:
+                                </p>
+                            </div>
+                            <div class="descr__content">
+                                <ul class="descr__list">
+                                    <li class="descr__text">
+                                        aretustöö ja tõuomaste katsete koordineerimine.
+                                    </li>
+                                    <li class="descr__text">
+                                        pärilike haiguste statistika koostamine.
+                                    </li>
+                                    <li class="descr__text">
+                                        labradori retriiveri tõugu koertega seonduva teabe kogumine ja levitamine oma
+                                        liikmetele ja teistele
+                                        huvilistele.
+                                    </li>
+                                    <li class="descr__text">
+                                        näituste, võistluste, koolituste, testide, katsete ja muude ürituste
+                                        korraldamine.
+                                    </li>
+                                    <li class="descr__text">
+                                        kontaktide loomine ja hoidmine EKL-i ja teiste tõuühingutega ning
+                                        väliskontaktide sõlmimine.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="dfcontent__info-btn dfcontent__info-btn--mob dfcontent__info-btn--red">Join us</button>
+                        <div class="descr__item">
+                            <div class="descr__content">
+                                <p class="descr__text">
+                                    <span class="descr__text--bold">Juhatus</span>
+                                </p>
+                            </div>
+                            <div class="descr__content">
+                                <p class="descr__text">
+                                    ELRÜ juhatuse koosseis alates 30.06.2021.
+                                </p>
+                            </div>
+                            <div class="descr__content">
+                                <p class="descr__text">
+                                    <span class="descr__text--bold">Natalja Stankevitš</span> - Juhatuse liige, juhatuse
+                                    esinaine
+                                </p>
+                                <p class="descr__text">
+                                    <span class="descr__text--bold">Maria Kappi</span> - Juhatuse liige, juhatuse
+                                    aseesinaine, näituste ja aretuse
+                                    koordineerija
+                                </p>
+                                <p class="descr__text">
+                                    <span class="descr__text--bold">Jevgenia Kravtšenko</span> - Juhatuse liige
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+    <div class="partners__wrap">
+        <div class="partners__item" id="item-part1">
+            <a href="https://kennelliit.ee/" class="partners__link">
+                <img src="assets/img/kennelliit.png" alt="Eesti Kennelliit" class="partners__img">
+            </a>
+        </div>
+        <div class="partners__item" id="item-part2">
+            <a href="http://www.abikoertekeskus.ee/new_web/" class="partners__link">
+                <img src="assets/img/ak.png" alt="Abikoerte keskus" class="partners__img">
+            </a>
+        </div>
+        <div class="partners__item" id="item-part3">
+            <a href="https://minukoer.ee/" class="partners__link">
+                <img src="assets/img/koer.png" alt="Minn koer" class="partners__img">
+            </a>
+        </div>
+        <div class="partners__item" id="item-part4">
+            <a href="https://www.royalcanin.com/ee" class="partners__link">
+                <img src="assets/img/royal.png" alt="Royal canin" class="partners__img">
+            </a>
+        </div>
+        <div class="partners__item" id="item-part5">
+            <a href="http://eliitloomakliinik.ee/" class="partners__link">
+                <img src="assets/img/elit.png" alt="Elit Loomakliinik" class="partners__img">
+            </a>
+        </div>
+        <!-- <div class="partners__item" id="item-part4">
+            <a href="https://www.royalcanin.com/ee" class="partners__link">
+                <img src="../assets/img/icons/royal.png" alt="Royal canin" class="partners__img">
+            </a>
+        </div>
+        <div class="partners__item" id="item-part5">
+            <a href="http://eliitloomakliinik.ee/" class="partners__link">
+                <img src="../assets/img/icons/elit.png" alt="Elit Loomakliinik" class="partners__img">
+            </a>
+        </div> -->
+    </div>
+</section>
+            <footer class="footer">
+    <container class="container">
+        <div class="footer__wrap">
+            <div class="footer__item">
+                <div id="desc1" class="footer__description">
+                    <div class="footer__title">
+                        <h5 class="title-text">
+                            Informatsioon
+                        </h5>
+                    </div>
+                    <div class="footer__content">
+                        <div class="content__info">
+                            <div class="info__content">
+                                <p class="content-item">
+                                    Ärinimi: MTÜ Eesti Labradori Retriiverite Tõuühing
+                                </p>
+                                <p class="content-item">
+                                    Registrikood: 80373465
+                                </p>
+                                <p class="content-item">
+                                    Arveldusarve: EE742200221060278981 Swedbank
+                                </p>
+                            </div>
+                            <div class="info__send">
+                                <form action="" class="send__form">
+                                    <input class="send__input" type="email" name="email" placeholder="E-posti aadress"><br>
+                                    <input class="send__submit" type="submit" value="liitu">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="connect__social--grid">
+                        <div class="social-links__item social-links__item--footer">
+                            <img class="social-links__img" src="assets/img/instagram.png" alt="" style="width:24px; height: 24px">
+                            <a href="#" class="social-links__link "></a>
+                        </div>
+                        <div class="social-links__item social-links__item--footer">
+                            <img class="social-links__img" src="assets/img/facebook.png" alt="" style="width:26px; height: 26px">
+                            <a href="#" class="social-links__link"></a>
+                        </div>
+                        <div class="social-links__item social-links__item--footer">
+                            <img class="social-links__img" src="assets/img/mail.png" alt="" style="width:24px; height: 20px">
+                            <a href="#" class="social-links__link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="desc2" class="footer__description">
+                    <div class="footer__title">
+                        <h5 class="title-text">
+                            Navigation
+                        </h5>
+                    </div>
+                    <div class="footer__content">
+                        <div class="content__navigate">
+                            <div class="navigate__item">
+                                <a href="#" class="navigate__link">
+                                    <h6 class="navigate__title">Ühing</h6>
+                                </a>
+                                <a href="#" class="navigate__link">
+                                    <h6 class="navigate__title">Näitused</h6>
+                                </a>
+                                <a href="#" class="navigate__link">
+                                    <h6 class="navigate__title">Üritused</h6>
+                                </a>
+                                <a href="#" class="navigate__link">
+                                    <h6 class="navigate__title">Labrador</h6>
+                                </a>
+                            </div>
+                            <div class="navigate__item">
+                                <a href="#" class="navigate__link">
+                                    <h6 class="navigate__title">kutsikad</h6>
+                                </a>
+                                <a href="#" class="navigate__link">
+                                    <h6 class="navigate__title">harrastused</h6>
+                                </a>
+                                <a href="#" class="navigate__link">
+                                    <h6 class="navigate__title">uudised</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="desc3" class="footer__description">
+                    <div class="footer__title">
+                        <h5 class="title-text">
+                            Võtke ühendust
+                        </h5>
+                    </div>
+                    <div class="footer__content">
+                        <div class="content__connect">
+                            <div class="connect__wrap">
+                                <div class="connect__item">
+                                    <div class="connect__img">
+                                        <img src="assets/img/nav.png" alt="">
+                                    </div>
+                                    <div class="connect__info">
+                                        <span>
+                                            Ihita tee 3, Kaberneeme küla,<br> Jõelähtme vald, 74211 Harjumaa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="connect__item">
+                                    <div class="connect__img">
+                                        <img src="assets/img/email.png" alt="">
+                                    </div>
+                                    <div class="connect__info">
+                                        <p class="connect__info-text">
+                                            Juhatus:<a href="mailto:juhatus@labrador.ee" class="info-link">juhatus@labrador.ee</a>
+                                        </p>
+                                        <p class="connect__info-text">
+                                            Näitused:<a href="mailto:juhatus@labrador.ee" class="info-link">show@labrador.ee</a>
+                                        </p>
+                                        <p class="connect__info-text">
+                                            Tõuomased katsed ja koolitused:
+                                        </p>
+                                        <a href="mailto:juhatus@labrador.ee" class="info-link">too@labrador.ee</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="connect__social">
+                                <div class="social-links__item social-links__item--footer">
+                                    <img class="social-links__img" src="assets/img/instagram.png" alt=""
+                                        style="width:24px; height: 24px">
+                                    <a href="#" class="social-links__link "></a>
+                                </div>
+                                <div class="social-links__item social-links__item--footer">
+                                    <img class="social-links__img" src="assets/img/facebook.png" alt="" style="width:26px; height: 26px">
+                                    <a href="#" class="social-links__link"></a>
+                                </div>
+                                <div class="social-links__item social-links__item--footer">
+                                    <img class="social-links__img" src="assets/img/mail.png" alt="" style="width:24px; height: 20px">
+                                    <a href="#" class="social-links__link"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="desc-wrap">
+                    
+                </div> -->
+            </div>
+            <div class="footer__foot">
+                <div class="private__wrap">
+                    <div class="private__item">
+                        <a href="#" class="private__link">
+                            <h5 class="private__title">
+                                Estonian Labrador Retriever Club
+                            </h5>
+                        </a>
+                    </div>
+                    <div class="private__item">
+                        <p class="private__text">Created with love by<a href="#" class="private__link">RedKaru Agency</a></p>
+                    </div>
+                    <div class="private__item">
+                        <div class="private__item-wrap">
+                            <a href="#" class="private__link">
+                                <h5 class="private__title private__title--policy">Privacy Policy</h5>
+                            </a>
+                            <a href="#" class="private__link">
+                                <h5 class="private__title private__title--policy">Term Of Use</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </container>
+</footer>
+</body>
+
+</html>

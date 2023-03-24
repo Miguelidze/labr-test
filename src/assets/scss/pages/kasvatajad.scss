@@ -1,0 +1,81 @@
+.kasvatajad {
+  // .kasvatajad__wrap
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 20px;
+    @media screen and (max-width:$smDesktopWidth){
+        justify-content: space-evenly;
+    }
+  }
+
+  // .kasvatajad__item
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex: 0 0 23%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: $mainFontColor ;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
+    @media screen and (max-width:$smDesktopWidth){
+        flex: 0 0 28%;
+    }
+    @media screen and (max-width:$phoneWidth){
+        flex: 0 0 45%;
+    }
+    @media screen and (max-width:$phoneWidth){
+        flex: 0 0 90%;
+    }
+  }
+
+  // .kasvatajad__link
+
+  &__link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  // .kasvatajad__initials
+
+  &__initials {
+    margin: 34px 0 15px;
+  }
+
+  // .kasvatajad__title
+
+  &__title {
+    font-family: $primaryTextFont;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120px;
+    text-align: center;
+    color: $bacground-pages;
+  }
+
+  // .kasvatajad__name
+
+  &__name {
+    margin-bottom: 65px;
+  }
+
+  // .kasvatajad__text
+
+  &__text {
+    font-family: $primaryTextFont;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 29px;
+    text-align: center;
+    color: $active-color;
+  }
+}

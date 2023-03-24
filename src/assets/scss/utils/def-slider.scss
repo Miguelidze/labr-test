@@ -1,0 +1,116 @@
+// Default slider styles
+
+.def-slider {
+  // min-width: 0;
+  position: relative;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-wrap: wrap;
+  /* Слайдер */
+  // .slick-slider {
+  //   position: absolute;
+  //   top: 50px;
+  //   z-index: 0;
+  // }
+  /* Слайдер запущен */
+  .slick-slider.slick-initialized {
+  }
+  /* Слайдер с точками */
+  .slick-slider.slick-dotted {
+  }
+  /* Ограничивающая оболочка */
+  .slick-list{
+    
+  }
+  /* Лента слайдов */
+  .slick-track {
+  }
+  /* Слайд */
+  .slick-slide {
+    opacity: 0.6;
+    margin:30px;
+    float:left;
+    height: 100%;
+    min-height: 1px;
+    @media screen and (max-width:$desktopWidth ) {
+      margin: 20px;
+    }
+    @media screen and (max-width:$smDesktopWidth ) {
+      margin: 15px;
+    }
+  // aspect-ratio: 1.8 !important;
+  }
+  /* Слайд активный (показывается) */
+  .slick-slide.slick-active {
+    transition: all 0.5s ease;
+  }
+  /* Слайд основной */
+  .slick-slide.slick-current {
+    opacity: 1;
+  }
+  /* Слайд по центру */
+  .slick-slide.slick-center {
+    transform: scale(1.1);
+  }
+  /* Клонированный слайд */
+  .slick-slide.slick-cloned {
+  }
+  /* Стрелка */
+  .slick-arrow {
+    position: absolute;
+    font-size: 0;
+  }
+
+  .slick-arrow.slick-prev {
+  }
+  .slick-arrow.slick-next {
+  }
+  .slick-arrow.slick-disabled {
+    border-color: #333;
+  }
+  /* Точки */
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0;
+    padding: 0;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: auto;
+  }
+  .slick-dots li {
+    list-style: none;
+  }
+  /* Активная точка */
+  .slick-dots li.slick-active {
+    border-color: tomato;
+  }
+  /* Элемент точки */
+  .slick-dots li button {
+    position: relative;
+    padding: 0;
+    margin: 0 15px;
+    font-size: 0;
+    background: #fff;
+    border-radius: 50%;
+    border-color: transparent;
+    width: 16px;
+    height: 16px;
+    @media screen and (max-width: $phoneWidth) {
+      margin: 0 10px;
+    }
+    @media screen and (max-width: $smPhoneWidth) {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  .slick-dots li.slick-active button {
+    background: tomato;
+  }
+}
+
+
+
+

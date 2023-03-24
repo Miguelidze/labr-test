@@ -1,0 +1,107 @@
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  margin-bottom: 140px;
+  @media screen and (max-width: $tabletWidth) {
+    margin-bottom: 80px;
+  }
+  // .partners__wrap
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: $default-color;
+    border: 1px solid $fontColorDefault;
+    border-radius: 10px;
+    padding: 25px;
+    position: relative;
+    margin: auto;
+    @media screen and (min-width: $largeWidth) {
+      width: 1280px;
+    }
+    @media screen and (min-width: $desktopWidth) and (max-width: $largeWidth) {
+        width: 1200px;
+    }
+    @media screen and (min-width: $smDesktopWidth) and (max-width: $desktopWidth) {
+        width: 1100px;
+    }
+    @media screen and (min-width: $tabletWidth) and (max-width: $smDesktopWidth) {
+        width: 950px;
+    }
+    @media screen and (max-width: $tabletWidth) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 10px;
+        justify-items: center;
+        width: min-content;
+        margin:0 auto;
+    }
+    @media screen and (max-width:$phoneWidth){
+        display: flex;
+        justify-content: center;
+    }
+    @media screen and (max-width:$smPhoneWidth){
+        margin: 0 10px;
+        padding: 10px;
+    }
+  }
+
+  // .partners__item
+
+  &__item {
+    width: min-content;
+    height:min-content;
+    @media screen and (max-width:$phoneWidth){
+        &:not(:last-child){
+            margin-bottom: 15px;
+        }
+    }
+  }
+
+  // .partners__img
+
+  &img {
+  }
+
+  // .partners__link
+
+  &__link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+}
+#item-part1{
+    @media screen and (max-width:$tabletWidth){
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+#item-part2{
+    @media screen and (max-width:$tabletWidth){
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+}
+#item-part3{
+    @media screen and (max-width:$tabletWidth){
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }   
+}
+#item-part4{
+    @media screen and (max-width:$tabletWidth){
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+#item-part5{
+    @media screen and (max-width:$tabletWidth){
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+}

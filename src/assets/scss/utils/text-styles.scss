@@ -1,0 +1,182 @@
+.font {
+  &--prim-text {
+    font-family: $primaryTextFont;
+  }
+  &--sec-text {
+    font-family: $secondaryTextFont;
+  }
+}
+.text {
+  &--300 {
+    font-weight: 400;
+  }
+  &--400 {
+    font-weight: 400;
+  }
+  &--500 {
+    font-weight: 500;
+  }
+  &--700 {
+    font-weight: 700;
+  }
+  &--900 {
+    font-weight: 900;
+  }
+  &--col {
+    &-primary {
+      color: $fontColorPrimary;
+    }
+    &-inv-primary {
+      color: $fontColorPrimaryInv;
+    }
+  }
+  &--6XL {
+    @include fSize(
+      $desktopWidth,
+      $smPhoneWidth,
+      $fontSize6XL_desktop,
+      $fontSize6XL_mobile
+    );
+    &--static {
+      font-size: $fontSize6XL_desktop;
+    }
+  }
+  &--XXXL {
+    @include fSize(
+      $desktopWidth,
+      $smPhoneWidth,
+      $fontSizeXXXL_desktop,
+      $fontSizeXXXL_mobile
+    );
+    &--static {
+      font-size: $fontSizeXXXL_desktop;
+    }
+  }
+  &--XXL {
+    @include fSize(
+      $desktopWidth,
+      $smPhoneWidth,
+      $fontSizeXXL_desktop,
+      $fontSizeXXL_mobile
+    );
+    &--static {
+      font-size: $fontSizeXXL_desktop;
+    }
+  }
+  &--XL {
+    @include fSize(
+      $desktopWidth,
+      $smPhoneWidth,
+      $fontSizeXL_desktop,
+      $fontSizeXL_mobile
+    );
+    &--static {
+      font-size: $fontSizeXL_desktop;
+    }
+  }
+  &--L {
+    @include fSize(
+      $desktopWidth,
+      $smPhoneWidth,
+      $fontSizeL_desktop,
+      $fontSizeL_mobile
+    );
+    &--static {
+      font-size: $fontSizeL_desktop;
+    }
+  }
+  &--M {
+    @include fSize(
+      $desktopWidth,
+      $smPhoneWidth,
+      $fontSizeM_desktop,
+      $fontSizeM_mobile
+    );
+    &--static {
+      font-size: $fontSizeM_desktop;
+    }
+  }
+  &--MS {
+    @include fSize(
+      $desktopWidth,
+      $smPhoneWidth,
+      $fontSizeMS_desktop,
+      $fontSizeMS_mobile
+    );
+    &--static {
+      font-size: $fontSizeMS_desktop;
+    }
+  }
+  &--S {
+    @include fSize(
+      $desktopWidth,
+      $smPhoneWidth,
+      $fontSizeS_desktop,
+      $fontSizeS_mobile
+    );
+    &--static {
+      font-size: $fontSizeS_desktop;
+    }
+  }
+  &--XS {
+    @include fSize(
+      $desktopWidth,
+      $smPhoneWidth,
+      $fontSizeXS_desktop,
+      $fontSizeXS_mobile
+    );
+    &--static {
+      font-size: $fontSizeXS_desktop;
+    }
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
+  }
+}
+
+//input
+.input {
+  &:not(.input--styled) {
+    color: inherit !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    font-weight: inherit !important;
+  }
+  &:not(.input--placeholder-styled) {
+    &::placeholder {
+      color: inherit !important;
+      font-family: inherit !important;
+      font-size: inherit !important;
+      line-height: inherit !important;
+      font-weight: inherit !important;
+      opacity: 0.6;
+    }
+  }
+}
+.select {
+  &:not(.select--styled) {
+    color: inherit !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    font-weight: inherit !important;
+  }
+  &:not(.select--placeholder-styled) {
+    &::placeholder {
+      color: inherit !important;
+      font-family: inherit !important;
+      font-size: inherit !important;
+      line-height: inherit !important;
+      font-weight: inherit !important;
+      opacity: 0.6;
+    }
+  }
+}

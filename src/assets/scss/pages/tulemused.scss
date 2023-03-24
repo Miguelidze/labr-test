@@ -1,0 +1,348 @@
+.page-content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 140px;
+  @media screen and (max-width: $smTabletWidth) {
+    flex-direction: column;
+    margin: 0 15px 80px;
+  }
+}
+.filter {
+  // .filter__wrap
+
+  &__wrap {
+    flex: 0 0 25%;
+    background: #524a40;
+    border-radius: 10px;
+    padding: 30px;
+    min-height: 342px;
+    height: fit-content;
+    margin-right: 80px;
+    @media screen and (max-width: $tabletWidth) {
+      margin-right: 40px;
+      padding: 20px;
+    }
+    @media screen and (max-width: $smTabletWidth) {
+      margin: 0 0 60px;
+      width: 100%;
+      text-align: center;
+    }
+    &--34 {
+      margin-right: 35px;
+      @media screen and (max-width: $smTabletWidth) {
+      margin-right: 0;
+    }
+    }
+  }
+
+  // .filter__title
+
+  &__title {
+    font-family: $primaryTextFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: $fontColorPrimary;
+    margin-bottom: 30px;
+  }
+
+  // .filter__link
+
+  &__link {
+    font-family: $primaryTextFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: $fontColorPrimary;
+    padding: 10px 0;
+    
+    &.currentLink {
+      border: 1px solid $fontColorPrimary;
+      border-radius: 10px;
+      background-color: $fontColorPrimary;
+      color: $fontColorActive;
+      padding: 10px;
+      margin-left: -10px;
+      @media screen and (max-width: $smTabletWidth) {
+        margin-left: 0;
+      }
+    }
+    @media screen and (max-width: $smTabletWidth) {
+      border: 1px solid $fontColorDefault;
+      border-radius: 10px;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__kuts{
+      font-family: $primaryTextFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: $fontColorPrimary;
+    }
+}
+.tulemused-content__wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.naituse {
+  // .naitused__wrap
+
+  &__wrap {
+    background: $bacground-pages;
+    border-radius: 10px;
+    padding: 60px;
+    @media screen and (max-width: $smTabletWidth) {
+      padding: 30px 15px;
+    }
+  }
+
+  // .naitused__title
+
+  &__title {
+    font-family: $secondaryTextFont;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: $fontColorPrimary;
+    margin-bottom: 30px;
+  }
+
+  // .naitused__text
+
+  &__text {
+    font-family: $primaryTextFont;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: $fontColorPrimary;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+.naituse-item {
+  display: flex;
+  @media screen and (max-width: $smTabletWidth) {
+    flex-direction: column;
+  }
+}
+
+.naituse-comment {
+  font-family: $primaryTextFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: $fontColorPrimary;
+  margin-bottom: 70px;
+  @media screen and (max-width: $smTabletWidth) {
+    display: none;
+  }
+}
+.naituse-content {
+  // .naituse-content__wrap
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    @media screen and (max-width: $smTabletWidth) {
+      flex-direction: column;
+    }
+  }
+
+  // .naituse-content__item
+
+  &__item {
+    position: relative;
+    flex: 0 0 30%;
+    margin: 15px;
+    @media screen and (max-width: $tabletWidth) {
+      flex: 0 0 28%;
+    }
+    @media screen and (max-width: $smTabletWidth) {
+      flex: 0 0 100%;
+    }
+  }
+
+  // .naituse-content__link
+
+  &__link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  // .naituse-content__img
+
+  &__img {
+    width: 100%;
+    aspect-ratio: 1.7;
+    margin-bottom: 18px;
+  }
+
+  // .naituse-content__info
+
+}
+.naituse-content-info {
+  // .naituse-content-info__date
+
+  &__date {
+    font-family: $primaryTextFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: $fontColorPrimary;
+    margin-bottom: 18px;
+  }
+
+  // .naituse-content-info__title
+
+  &__title {
+    font-family: $primaryTextFont;
+    font-style: normal;
+    font-weight: 400;
+    color: $fontColorPrimary;
+  }
+}
+.uudis {
+  // .uudis__list
+
+  &__list {
+    list-style: decimal;
+    padding-left: 20px;
+    &--disc{
+      list-style: disc;
+      margin-left: 25px;
+    }
+  }
+}
+
+.aasta {
+  // .aasta__wrap
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child){
+      margin-bottom: 110px;
+      @media screen and (max-width: $phoneWidth) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  // .aasta__date
+
+  &__date {
+    font-family: $secondaryTextFont;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px $fontColorPrimary;
+    color: #524a40;
+    text-shadow: 0px 4px 4px $fontColorPrimary;
+    margin-bottom: 40px;
+  }
+
+  // .aasta__envelopes
+
+  &__envelopes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  // .aasta__envelope
+
+  &__envelope {
+    position: relative;
+    display: flex;
+    flex: 0 0 24%;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    &>img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      margin: 5px;
+    }
+    @media screen and (max-width: $tabletWidth){
+      flex: 0 0 32%;
+    }
+    @media screen and (max-width: $phoneWidth){
+      flex: 0 0 48%;
+    }
+    @media screen and (max-width: $smPhoneWidth){
+      flex: 0 0 100%;
+    }
+  }
+
+}
+.envelope {
+  // .envelope__year
+
+  &__year {
+    position: absolute;
+    top: 5%;
+    font-family: $primaryTextFont;
+    font-style: normal;
+    font-weight: 900;
+    color: $fontColorPrimary;
+    margin-top: 15px;
+  }
+
+  // .envelope__rate
+
+  &__rate {
+    top: 35%;
+    position: absolute;
+    @media screen and (max-width: $smDesktopWidth){
+      // top: 30%;
+    }
+  }
+
+  // .envelope__name
+
+  &__name {
+    top: 55%;
+    position: absolute;
+    text-align: center;
+    @media screen and (max-width: $smDesktopWidth){
+      top: 57%;
+    }
+  }
+}
+.rate-text {
+  font-family: $primaryTextFont;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  color: $fontColorPrimaryInv;
+}
+.name-text {
+  font-family: $primaryTextFont;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: $fontColorPrimaryInv;
+}
