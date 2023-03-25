@@ -470,7 +470,6 @@
 }
 .accordion-header {
   flex: 0 0 50%;
-  padding-left: 35px;
   font-family: $secondaryTextFont;
   font-style: normal;
   font-weight: 900;
@@ -526,7 +525,7 @@
 .submenuItems a {
   display: block;
   color: $fontColorPrimary;
-  padding: 12px 12px 12px 45px;
+  padding: 12px;
   transition: all 0.4s ease-out;
   &:hover {
     color: $fontColorActive;

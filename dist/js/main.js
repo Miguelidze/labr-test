@@ -1250,11 +1250,32 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(function () {
   var accordion = new Accordion(jquery__WEBPACK_IMPORTED_MODULE_1___default()(".rules__accordion-menu"), false);
 });
 
-// Modal window
+// Modal windows
 
 ///MODAL
+
 const myModal = new _components_hystmodal__WEBPACK_IMPORTED_MODULE_2__["default"]({
   linkAttributeName: "data-hystmodal"
+});
+
+//Modal
+jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).on('click', '.modal-trigger', function (event) {
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()("body").css("overflow", "hidden");
+  var modalID = jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).data('modal-id');
+  var modal = jquery__WEBPACK_IMPORTED_MODULE_1___default()("#" + modalID + ".modal");
+  modal.addClass("modal-active");
+  var modalTitle = jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).data('modal-title');
+  if (typeof modalTitle !== 'undefined') {
+    modal.find(".modal-title").html(modalTitle);
+  }
+});
+jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).on('click', '.modal-bg, .modal-cross', function (event) {
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()("body").css("overflow", "visible");
+  var modal = jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).closest(".modal");
+  modal.removeClass("modal-active");
+});
+jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).on('click', '.modal-window', function (event) {
+  event.stopPropagation();
 });
 
 // tabs uudised
@@ -1311,6 +1332,12 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
     ToggleReadmoreObjects(jquery__WEBPACK_IMPORTED_MODULE_1___default()(this));
   });
 });
+
+// Preloader
+
+window.onload = function () {
+  document.body.classList.add("loaded");
+};
 
 /***/ }),
 

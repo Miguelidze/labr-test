@@ -32,6 +32,7 @@
 @import "pages/kasvatajad.scss";
 @import "pages/toust.scss";
 @import "pages/harrastused.scss";
+@import "pages/kuulutus.scss";
 
 body {
   overflow-y: auto;
@@ -80,7 +81,7 @@ input {
   padding-left: 20px;
   color: $fontColorPrimary;
 }
-div.hidden{
+div.hidden {
   display: none;
 }
 .ibg {
@@ -153,7 +154,7 @@ div.hidden{
     background-clip: content-box;
   }
 }
-.current-bread{
+.current-bread {
   color: $fontColorActive !important;
 }
 .section-wrapper {
@@ -187,7 +188,7 @@ div.hidden{
         display: none;
       }
     }
-    &--part{
+    &--part {
       align-self: baseline;
     }
   }
@@ -224,29 +225,198 @@ div.hidden{
   padding: 2px;
   border-radius: 10px;
 }
-.btn{
+.btn {
   border-radius: 8px;
   transition: all 0.5ms linear;
   &--red {
-      background: $active-color;
-      color: $fontColorPrimary;
-      &:hover {
-        transform: skew(-10deg);
-      }
-      &:active {
-        background: $fontColorPrimary;
-        color: $fontColorPrimaryInv;
-      }
+    background: $active-color;
+    color: $fontColorPrimary;
+    &:hover {
+      transform: skew(-10deg);
     }
-    &--white {
+    &:active {
       background: $fontColorPrimary;
       color: $fontColorPrimaryInv;
-      &:hover {
-        transform: skew(-10deg);
-      }
-      &:active {
-        background: $active-color;
-        color: $fontColorPrimary;
-      }
     }
+  }
+  &--white {
+    background: $fontColorPrimary;
+    color: $fontColorPrimaryInv;
+    &:hover {
+      transform: skew(-10deg);
+    }
+    &:active {
+      background: $active-color;
+      color: $fontColorPrimary;
+    }
+  }
+}
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+  &__row {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: 2s infinite linear;
+  }
+  &__item {
+    flex: 0 0 50%;
+    background: linear-gradient(270deg, #3c3022 15.39%, #6f1d1b 100%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    border: none;
+    &--rotate {
+      rotate: 180deg;
+    }
+    // position: absolute;
+    // display: inline-block;
+    // top: 0;
+    // background-color: #337ab7;
+    // border-radius: 100%;
+    // width: 35px;
+    // height: 35px;
+    // animation: preloader-bounce 2s infinite ease-in-out;
+    // &:last-child {
+    //   top: auto;
+    //   bottom: 0;
+    //   animation-delay: -1s;
+    // }
+  }
+  // .preloader__icon
+
+  &__icon {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    max-width: 387px;
+    aspect-ratio: 0.9;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .preloader__title
+
+  &__title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 65%;
+    left: 27%;
+  }
+
+  // .preloader__text
+
+  &__text {
+    font-family: $primaryTextFont ;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $fontColorPrimary;
+    @media screen {
+      
+    }
+  }
+}
+// @keyframes preloader-rotate {
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
+
+// @keyframes preloader-bounce {
+//   0%,
+//   100% {
+//     transform: scale(0);
+//   }
+
+//   50% {
+//     transform: scale(1);
+//   }
+// }
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+.def-modal {
+
+		// .def-modal__outer-container
+
+		&__outer-container {
+		}
+
+		// .def-modal__inner-container
+
+		&__inner-container {
+		}
+
+		// .def-modal__wrapper
+
+		&__wrapper {
+		}
+
+		// .def-modal__img
+
+		&__img {
+		}
+
+		// .def-modal__info
+
+		&__info {
+		}
+
+		// .def-modal__cross
+
+		&__cross {
+		}
+
+		// .def-modal__content
+
+		&__content {
+		}
+
+		// .def-modal__title
+
+		&__title {
+		}
+
+		// .def-modal__title-text
+
+		&__title-text {
+		}
+
+		// .def-modal__aviso
+
+		&__aviso {
+		}
+
+		// .def-modal__aviso-text
+
+		&__aviso-text {
+		}
+}
+.modal-bg {
+}
+.modal-window {
+}
+.modal-cross {
 }

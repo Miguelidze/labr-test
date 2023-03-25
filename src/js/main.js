@@ -163,12 +163,37 @@ $(function () {
   var accordion = new Accordion($(".rules__accordion-menu"), false);
 });
 
-// Modal window
+// Modal windows
 
 ///MODAL
+
 const myModal = new HystModal({
     linkAttributeName: "data-hystmodal",
 });
+
+//Modal
+$(document).on('click', '.modal-trigger', function(event) {
+	$("body").css("overflow", "hidden");
+
+	var modalID = $(this).data('modal-id');
+	var modal = $("#" + modalID + ".modal");
+	modal.addClass("modal-active");
+
+	var modalTitle = $(this).data('modal-title');
+	if(typeof modalTitle !== 'undefined'){
+		modal.find(".modal-title").html(modalTitle);
+	}
+});
+$(document).on('click', '.modal-bg, .modal-cross', function(event) {
+	$("body").css("overflow", "visible");
+	var modal = $(this).closest(".modal");
+	modal.removeClass("modal-active");
+
+});
+$(document).on('click', '.modal-window', function(event) {
+	event.stopPropagation();
+});
+
 
 // tabs uudised
 
@@ -226,6 +251,12 @@ $(document).ready(function(){
 	ToggleReadmoreObjects($(this));
 	});
 });
+
+// Preloader
+
+ window.onload = function () {
+   document.body.classList.add("loaded");
+ };
 
 
  

@@ -12,7 +12,47 @@
 
 <body>
     <div class="page-content-wrapper">
+        <!-- <div class="def-modal modal-bg">
+            <div class="def-modal__outer-container">
+                <div class="def-modal__inner-container">
+                    <div class="def-modal__wrapper modal-window">
+                        <div class="def-modal__img">
+        
+                        </div>
+                        <div class="def-modal__info">
+                            <div class="def-modal__cross modal-cross"></div>
+                            <div class="def-modal__content">
+                                <div class="def-modal__title">
+                                    <h2 class="def-modal__title-text">
+                                        Liituge ühinguga
+                                    </h2>
+                                </div>
+                                <form action="" method="get">
+                                    <label for="username">Ees- ja perekonnanimi</label>
+                                    <input type="text" name="username" id="username"
+                                        placeholder="Sisestage oma ees-ja perekonnanimi">
+                                    <label for="number">Isikukood</label>
+                                    <input type="number" name="number" id="number" placeholder="Sisestage oma isikukood">
+                                    <label for="telefon">Telefoninumber</label>
+                                    <input type="number" name="telefon" id="telefon" placeholder="Sisestage oma number">
+                                    <label for="adress">Aadress</label>
+                                    <input type="email" name="adress" id="adress" placeholder="Sisestage oma aadress">
+                                </form>
+                                <button type="submit">
+                                    Edasi
+                                </button>
+                                <div class="def-modal__aviso">
+                                    <p class="def-modal__aviso-text">Klõpsates nuppu "Edasi", nõustute isikuandmete töötlemisega
+                                        ja nõustute privaatsuspoliitikaga</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
         <header id="home" class="header">
+            
             <container class="container">
                 <div class="header__logo ibg ibg--contain">
                     <img src="assets/img/logo.png" alt="logotype" class="logo__img">
@@ -164,6 +204,7 @@
                 </div>
             </container>
         </header>
+        
     <div id="info" data-current-page-id="harrastused-a"></div>
     <section class="uhing">
         <div class="uhing-bcg ibg ibg--cover">
@@ -198,7 +239,7 @@
                     <a id="uhing" href="../uhing.html" class="title__text">Ühing</a>
                 </div>
                 <div class="links__link">
-                    <a id="connect" href="../connect.html" class="link__text">Liikmeks astumine</a>
+                    <a id="connect" href="../connect.html#info" class="link__text">Liikmeks astumine</a>
                 </div>
                 <div class="links__link">
                     <a id="rules" href="../rules.html" class="link__text">Põhikiri</a>
@@ -344,52 +385,95 @@
                                     Foto: Reeli Kuhi-Thalfeldt
                                 </p>
                                 <p class="uudis__text text--MS">
-                                    Tasemekatse puhul on tegemist retriiveritele mõeldud võistlusalaga, mille eelduseks on tõukatse läbimine.
+                                    Tasemekatse puhul on tegemist retriiveritele mõeldud võistlusalaga, mille eelduseks
+                                    on tõukatse läbimine.
                                 </p>
                             </div>
                         </div>
                         <div class="uudis__content">
-                            <div class="harrast__content harrast__content">
-                                <div class="harrast__item">
+                            <div class="harrast__content harrast__content--ac">
+                                <div class="harrast__item harrast__item--fl67">
                                     <p class="uudis__text text--MS">
-                                        Retriiverite tõuomane tasemekatse (Soomes noutajien metsästyskoe – NOME-B) eesmärgiks on hinnata koera suutlikkust ja
-                                        tahet tuua ära saak veest ja maalt ning võimet toimida kasutuskõlbliku jahikoerana retriiveritele tüüpilises
+                                        Retriiverite tõuomane tasemekatse (Soomes noutajien metsästyskoe – NOME-B)
+                                        eesmärgiks on hinnata koera suutlikkust ja
+                                        tahet tuua ära saak veest ja maalt ning võimet toimida kasutuskõlbliku
+                                        jahikoerana retriiveritele tüüpilises
                                         jahiolukorras.
                                     </p>
                                     <p class="uudis__text text--MS">
-                                        Tasemekatse on ülesehitatud pidades silmas, et sooritatavad ülesanded vastaksid võimalikult palju tõelisele
-                                        jahiolukorrale. Katsel antakse koerale vastavalt tema oskustele järk (I, II, III) ja tavaliselt koeri tulemuste põhjal
-                                        järjekorda ei asetata. Võistlemine toimub kolmes klassis – alg, ava ja võitjaklassis ning järgmisesse klassi pääsemiseks
-                                        tuleb saavutada võisteldavas klassis I järk. Katsel kasutatakse reeglina saaki, kuid võitjaklassis võidakse kasutada ka
+                                        Tasemekatse on ülesehitatud pidades silmas, et sooritatavad ülesanded vastaksid
+                                        võimalikult palju tõelisele
+                                        jahiolukorrale. Katsel antakse koerale vastavalt tema oskustele järk (I, II,
+                                        III) ja tavaliselt koeri tulemuste põhjal
+                                        järjekorda ei asetata. Võistlemine toimub kolmes klassis – alg, ava ja
+                                        võitjaklassis ning järgmisesse klassi pääsemiseks
+                                        tuleb saavutada võisteldavas klassis I järk. Katsel kasutatakse reeglina saaki,
+                                        kuid võitjaklassis võidakse kasutada ka
                                         dummysid.
                                     </p>
                                     <p class="uudis__text text--MS">
-                                        Retriiverite tasemekatse reeglid pärinevad Soomest, kuid samalaadseid katseid toimub ka teistes Skandinaavia maades.
-                                        Esimene tasemekatse toimus Eestis 2010.a ning aastas toimub 1-2 katset. Edukatel koertel on võimalik saada ka Eesti
-                                        Retriiverite Töökatsete Tsempioni (EST RT CH) tiitel, mis omistatakse koerale, kes on saanud tasemekatse võitjaklassis
+                                        Retriiverite tasemekatse reeglid pärinevad Soomest, kuid samalaadseid katseid
+                                        toimub ka teistes Skandinaavia maades.
+                                        Esimene tasemekatse toimus Eestis 2010.a ning aastas toimub 1-2 katset. Edukatel
+                                        koertel on võimalik saada ka Eesti
+                                        Retriiverite Töökatsete Tsempioni (EST RT CH) tiitel, mis omistatakse koerale,
+                                        kes on saanud tasemekatse võitjaklassis
                                         kolm I järku (lisaks saanud erinäituselt vähemalt hinde “hea).
                                     </p>
                                 </div>
-                                <div class="harrast__item">
+                                <div class="harrast__item harrast__item--fl30">
                                     <div class="harrast__img harrast__img--sm">
                                         <img src="assets/img/tasemekatse1.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="harrast__title">
-                                <h4 class="harrast__text text--MS">Hinnatavad omadused</h4>
+                            <div class="harrast__content harrast__content--column">
+                                <div class="harrast__title">
+                                    <h4 class="harrast__text text--MS">Hinnatavad omadused</h4>
+                                </div>
+                                <p class="uudis__text text--MS">
+                                    Katse alguses eeldatakse, et jahimees on lasknud teatud koguse saaki. Mõned
+                                    kukkumiskohad on täpselt teada, mõne
+                                    kohta
+                                    teatakse vaid ligikaudne asukoht. Katse ajal jäljendatakse osade lindude tabamist
+                                    püssilasu ja viskega ning koerale
+                                    antakse võimalus jätta kukkumiskohad meelde. Ülesandeid võib olla mitu nii maal kui
+                                    vees.
+                                </p>
+                                <p class="uudis__text text--MS">
+                                    Kuigi tasemekatse käigus sooritatavad ülesanded luuakse igal korral veidi erinevad
+                                    vastavalt maastikule ning
+                                    kujutletavale jahiolukorrale selles maastikus, sooritatakse katse jooksul kindlasti
+                                    kolme liiki
+                                    retriivimisülesandeid,
+                                    milleks on markeerimine, juhtimine ja otsimine. Lisaks tehakse algklassis ka
+                                    jäljetöö ülesanne.
+                                </p>
                             </div>
-                            <p class="uudis__text text--MS">
-                                Katse alguses eeldatakse, et jahimees on lasknud teatud koguse saaki. Mõned kukkumiskohad on täpselt teada, mõne kohta
-                                teatakse vaid ligikaudne asukoht. Katse ajal jäljendatakse osade lindude tabamist püssilasu ja viskega ning koerale
-                                antakse võimalus jätta kukkumiskohad meelde. Ülesandeid võib olla mitu nii maal kui vees.
-                            </p>
-                            <p class="uudis__text text--MS">
-                                Kuigi tasemekatse käigus sooritatavad ülesanded luuakse igal korral veidi erinevad vastavalt maastikule ning
-                                kujutletavale jahiolukorrale selles maastikus, sooritatakse katse jooksul kindlasti kolme liiki retriivimisülesandeid,
-                                milleks on markeerimine, juhtimine ja otsimine. Lisaks tehakse algklassis ka jäljetöö ülesanne.
-                            </p>
-                            <div class="harrast__content harrast__content">
+                            <div class="harrast__content harrast__content--column">
+                                <div class="harrast__title">
+                                    <h4 class="harrast__text text--MS">Hinnatavad omadused</h4>
+                                </div>
+                                <p class="uudis__text text--MS">
+                                    Katse alguses eeldatakse, et jahimees on lasknud teatud koguse saaki. Mõned
+                                    kukkumiskohad on täpselt teada, mõne
+                                    kohta
+                                    teatakse vaid ligikaudne asukoht. Katse ajal jäljendatakse osade lindude tabamist
+                                    püssilasu ja viskega ning koerale
+                                    antakse võimalus jätta kukkumiskohad meelde. Ülesandeid võib olla mitu nii maal kui
+                                    vees.
+                                </p>
+                                <p class="uudis__text text--MS">
+                                    Kuigi tasemekatse käigus sooritatavad ülesanded luuakse igal korral veidi erinevad
+                                    vastavalt maastikule ning
+                                    kujutletavale jahiolukorrale selles maastikus, sooritatakse katse jooksul kindlasti
+                                    kolme liiki
+                                    retriivimisülesandeid,
+                                    milleks on markeerimine, juhtimine ja otsimine. Lisaks tehakse algklassis ka
+                                    jäljetöö ülesanne.
+                                </p>
+                            </div>
+                            <div class="harrast__content harrast__content--ac">
                                 <div class="harrast__item">
                                     <div class="harrast__img harrast__img--sm">
                                         <img src="assets/img/tasemekatse2.jpg" alt="">
@@ -400,46 +484,74 @@
                                         <h4 class="harrast__text text--MS">Markeerimisülesanne</h4>
                                     </div>
                                     <p class="uudis__text text--MS">
-                                        Markeerimisülesandel hinnatakse koera võimet määrata saagi kukkumiskoht ja seda meelde jätta. Tavaliselt tehakse üks või
-                                        kaks viset kas maalt või paadist vette või roostikku. Saagi kukkumist on koeral võimalik jälgida ning koos visetega
-                                        tehakse ka püssilasud. Saades loa, peab koer kukkunud saagi ära tooma. Suunavaid käsklusi ei tohi seejuures kasutada.
+                                        Markeerimisülesandel hinnatakse koera võimet määrata saagi kukkumiskoht ja seda
+                                        meelde jätta. Tavaliselt tehakse üks või
+                                        kaks viset kas maalt või paadist vette või roostikku. Saagi kukkumist on koeral
+                                        võimalik jälgida ning koos visetega
+                                        tehakse ka püssilasud. Saades loa, peab koer kukkunud saagi ära tooma. Suunavaid
+                                        käsklusi ei tohi seejuures kasutada.
                                     </p>
                                 </div>
                             </div>
-                            <p class="uudis__text text--MS">
-                                Algklassis võib markeerimisülesanne koosneda kahest ühekordsest markeeringust, mis tähendab, et koos püssilasuga
-                                visatakse lind ning koer lubatakse peale seda saaki tooma, seejärel tehakse sama veelkord uuesti. Avaklassis ja vahel ka
-                                algklassis tehakse aga kohe kahene markeering, mis tähendab, et esimese püssilasuga visatakse esimene lind ning teise
-                                püssilasuga teine lind. Koer peab senikaua ootama ning ära tooma mõlemad linnud. Võitjaklassis võidakse ka määrata kumb
-                                visatud lindudest tuleb tuua ära esimesena.
-                            </p>
-                            <p class="uudis__text text--MS">
-                                Algklassis tehakse markeeringud selliselt, et neist ühe kukkumiskohta koer näeb ning teise täpne koht pole nähtav,
-                                näiteks üks visatakse avavette ja teine roostikku. Avaklassis ei ole aga enam kummagi viske täpne asukoht kaugelt nähtav
-                                ning võitjaklassis võidakse teha ka kolmene markeering.
-                            </p>
-                            <div class="harrast__title">
-                                <h4 class="harrast__text text--MS">Juhtimisülesanne</h4>
+                            <div class="harrast__content harrast__content--column">
+                                <p class="uudis__text text--MS">
+                                    Algklassis võib markeerimisülesanne koosneda kahest ühekordsest markeeringust, mis
+                                    tähendab, et koos püssilasuga
+                                    visatakse lind ning koer lubatakse peale seda saaki tooma, seejärel tehakse sama
+                                    veelkord uuesti. Avaklassis ja
+                                    vahel ka
+                                    algklassis tehakse aga kohe kahene markeering, mis tähendab, et esimese püssilasuga
+                                    visatakse esimene lind ning
+                                    teise
+                                    püssilasuga teine lind. Koer peab senikaua ootama ning ära tooma mõlemad linnud.
+                                    Võitjaklassis võidakse ka määrata
+                                    kumb
+                                    visatud lindudest tuleb tuua ära esimesena.
+                                </p>
+                                <p class="uudis__text text--MS">
+                                    Algklassis tehakse markeeringud selliselt, et neist ühe kukkumiskohta koer näeb ning
+                                    teise täpne koht pole nähtav,
+                                    näiteks üks visatakse avavette ja teine roostikku. Avaklassis ei ole aga enam
+                                    kummagi viske täpne asukoht kaugelt
+                                    nähtav
+                                    ning võitjaklassis võidakse teha ka kolmene markeering.
+                                </p>
                             </div>
-                            <p class="uudis__text text--MS">
-                                Juhtimisülesande puhul ei tea koer saagi asukohta ning koerajuhi ülesandeks on häälkäsklusi, käemärke ja ka vilet
-                                kasutades juhatada koer soovitud kohta. Koer ei tohi antud ülesannet lahendada otsinguna, vaid peab lähtuma liikumisel
-                                koerajuhi käsklustest – edasi, parem, vasak, stop/seis, otsi, mida antakse häälkäskluse ning käemärkidega.
-                            </p>
-                            <p class="uudis__text text--MS">
-                                Algklassis on juhtimisülesande eesmärgiks, et koer suudaks sirgjooneliselt edasi liikuda 30-40 m. Avaklassis on
-                                juhtimisülesande sooritamiseks vajalik kasutada ka juba teisi suunamiskäsklusi ning vahemaa on pikem. Alates avaklassist
-                                võib juhtimisülesanne toimuda vees, võitjaklassis algusega juba kaldast eemalt maastikust suundudes edasi vette.
-                            </p>
-                            <div class="harrast__content harrast__content">
+                            <div class="harrast__content harrast__content--column">
+                                <div class="harrast__title">
+                                    <h4 class="harrast__text text--MS">Juhtimisülesanne</h4>
+                                </div>
+                                <p class="uudis__text text--MS">
+                                    Juhtimisülesande puhul ei tea koer saagi asukohta ning koerajuhi ülesandeks on
+                                    häälkäsklusi, käemärke ja ka vilet
+                                    kasutades juhatada koer soovitud kohta. Koer ei tohi antud ülesannet lahendada
+                                    otsinguna, vaid peab lähtuma
+                                    liikumisel
+                                    koerajuhi käsklustest – edasi, parem, vasak, stop/seis, otsi, mida antakse
+                                    häälkäskluse ning käemärkidega.
+                                </p>
+                                <p class="uudis__text text--MS">
+                                    Algklassis on juhtimisülesande eesmärgiks, et koer suudaks sirgjooneliselt edasi
+                                    liikuda 30-40 m. Avaklassis on
+                                    juhtimisülesande sooritamiseks vajalik kasutada ka juba teisi suunamiskäsklusi ning
+                                    vahemaa on pikem. Alates
+                                    avaklassist
+                                    võib juhtimisülesanne toimuda vees, võitjaklassis algusega juba kaldast eemalt
+                                    maastikust suundudes edasi vette.
+                                </p>
+                            </div>
+                            <div class="harrast__content harrast__content--ac">
                                 <div class="harrast__item">
-                                    <div class="harrast__title">
+                                    <div class="harrast__title harrast__title--right">
                                         <h4 class="harrast__text text--MS">Otsimisülesanne</h4>
                                     </div>
-                                    <p class="uudis__text text--MS">
-                                        Otsimisalale on sarnaselt tõukatsega paigutatud teatud arv linde, kuid võrreldes tõukatsega on äratoomisvahemaad pikemad
-                                        (kuni 150m). Osa või koguni terve otsingualast võib olla roostikus ja vees. Koera juhtimine otsingualal pole lubatud,
-                                        koer peab töötama iseseisvalt. Hea tulemuse saavutamiseks peaks koer töötama otsingualal saagi leidmiseni, korduvalt
+                                    <p class="uudis__text uudis__text--end text--MS">
+                                        Otsimisalale on sarnaselt tõukatsega paigutatud teatud arv linde, kuid võrreldes
+                                        tõukatsega on äratoomisvahemaad pikemad
+                                        (kuni 150m). Osa või koguni terve otsingualast võib olla roostikus ja vees.
+                                        Koera juhtimine otsingualal pole lubatud,
+                                        koer peab töötama iseseisvalt. Hea tulemuse saavutamiseks peaks koer töötama
+                                        otsingualal saagi leidmiseni, korduvalt
                                         tühjalt koerajuhi juurde naasmine võib alandada järku.
                                     </p>
                                 </div>
@@ -449,51 +561,72 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="harrast__title">
-                                <h4 class="harrast__text text--MS">Jäljeülesanne</h4>
+                            <div class="harrast__content harrast__content--column">
+                                <div class="harrast__title">
+                                    <h4 class="harrast__text text--MS">Jäljeülesanne</h4>
+                                </div>
+                                <p class="uudis__text text--MS">
+                                    Jälg veetakse ainult algklassis ning seda vaid I järgu vääriliselt tööd teinud koertele
+                                    ja selle pikkus on umbes 200 m.
+                                    Koerale ei näidata jälje algust, vaid ta saadetakse jälje suunas umbes 10 m kauguselt.
+                                </p>
+                                <p class="uudis__text text--MS">
+                                    Vastavalt võistlusklassile tehakse ülesanded keerulisemaks pikendades vahemaid,
+                                    suurendades visatava saagi arvu ning
+                                    raskendades maastikku. Algklassis on katse toimumise ala taimestik suhteliselt avatud
+                                    nii vees kui ka maastikul, kuid
+                                    siiski piisavalt tihe, et saak oleks enamus ülesannete puhul väljaspool koera
+                                    nägemisulatust. Avaklassis on taimestik
+                                    tihe nii vees kui ka maastikul. Mida kõrgem võistlusklass, seda enam ülesandeid tuleb
+                                    sooritada vees. Võitjaklassis
+                                    toimub suurem osa katsest juba veetööna.
+                                </p>
                             </div>
-                            <p class="uudis__text text--MS">
-                                Jälg veetakse ainult algklassis ning seda vaid I järgu vääriliselt tööd teinud koertele ja selle pikkus on umbes 200 m.
-                                Koerale ei näidata jälje algust, vaid ta saadetakse jälje suunas umbes 10 m kauguselt.
-                            </p>
-                            <p class="uudis__text text--MS">
-                                Vastavalt võistlusklassile tehakse ülesanded keerulisemaks pikendades vahemaid, suurendades visatava saagi arvu ning
-                                raskendades maastikku. Algklassis on katse toimumise ala taimestik suhteliselt avatud nii vees kui ka maastikul, kuid
-                                siiski piisavalt tihe, et saak oleks enamus ülesannete puhul väljaspool koera nägemisulatust. Avaklassis on taimestik
-                                tihe nii vees kui ka maastikul. Mida kõrgem võistlusklass, seda enam ülesandeid tuleb sooritada vees. Võitjaklassis
-                                toimub suurem osa katsest juba veetööna.
-                            </p>
                             <div class="harrast__title">
                                 <h4 class="harrast__text text--MS">Valmistumine tasemekatseks</h4>
                             </div>
                             <p class="uudis__text text--MS">
-                                Tõukatse läbinuna peaks koer oskama tuua esemeid maalt ja veest, otsida ning jälge ajada. Tasemekatseks valmistumisel
-                                tuleb koerale õpetada lisaks suunamist – õpetada koera liikuma edasi, paremale või vasakule ning peatuma. Juhul, kui
-                                koera oskab edasi liikuda juba pikal distantsil, siis võib algklassis saada suunamisülesandel hakkama teisi
-                                suunamiskäsklusi kasutamata. Seega ei pea selles klassis võistlemiseks veel teised suunavad käsklused selged olema.
+                                Tõukatse läbinuna peaks koer oskama tuua esemeid maalt ja veest, otsida ning jälge
+                                ajada. Tasemekatseks valmistumisel
+                                tuleb koerale õpetada lisaks suunamist – õpetada koera liikuma edasi, paremale või
+                                vasakule ning peatuma. Juhul, kui
+                                koera oskab edasi liikuda juba pikal distantsil, siis võib algklassis saada
+                                suunamisülesandel hakkama teisi
+                                suunamiskäsklusi kasutamata. Seega ei pea selles klassis võistlemiseks veel teised
+                                suunavad käsklused selged olema.
                             </p>
                             <p class="uudis__text text--MS">
-                                Samuti peaks harjutatama täpsemat markeerimist ehk saagi kukkumiskoha määramist ning teha mälutreeningut, kus tuleb
+                                Samuti peaks harjutatama täpsemat markeerimist ehk saagi kukkumiskoha määramist ning
+                                teha mälutreeningut, kus tuleb
                                 mitme eseme kukkumiskohad meelde jätta.
                             </p>
                             <p class="uudis__text text--MS">
-                                Kogu katse vältel peab koer olema ilma rihmata, mis eeldab koeralt head kuulekust ning koostööd koerajuhiga. Saaki tooma
-                                minna tohib koer vaid koerajuhilt selleks loa saades ja koer peab suutma jääda paigale ka püssilasu kõlades.
-                                Võitjaklassis võib töö toimuda paaristööna ning siis peab koer jälgima teise koera tööd ise samal ajal rahulikuks ja
+                                Kogu katse vältel peab koer olema ilma rihmata, mis eeldab koeralt head kuulekust ning
+                                koostööd koerajuhiga. Saaki tooma
+                                minna tohib koer vaid koerajuhilt selleks loa saades ja koer peab suutma jääda paigale
+                                ka püssilasu kõlades.
+                                Võitjaklassis võib töö toimuda paaristööna ning siis peab koer jälgima teise koera tööd
+                                ise samal ajal rahulikuks ja
                                 vaikseks jäädes.
                             </p>
                             <p class="uudis__text text--MS">
-                                Kui tõukatsel on reeglina kasutatakse parte ja faasaneid, siis tasemekatsel on lisaks kasutusel ka varesed ja kajakad.
-                                Seega tuleb koerale tutvustada erinevat saaki. Otsingualalt võib leida kõiki linde ning vahel pannakse sinna ka jänes.
+                                Kui tõukatsel on reeglina kasutatakse parte ja faasaneid, siis tasemekatsel on lisaks
+                                kasutusel ka varesed ja kajakad.
+                                Seega tuleb koerale tutvustada erinevat saaki. Otsingualalt võib leida kõiki linde ning
+                                vahel pannakse sinna ka jänes.
                             </p>
                             <p class="uudis__text text--MS">
-                                Lisaks pööratakse rohkem tähelepanu saagi loovutamisele, sest tasemekatsel peaks koer tooma saagi koerajuhile kätte ning
+                                Lisaks pööratakse rohkem tähelepanu saagi loovutamisele, sest tasemekatsel peaks koer
+                                tooma saagi koerajuhile kätte ning
                                 korduv saagi maha pillamine või saagi mitte kätte toomine alandavad järku.
                             </p>
                             <p class="uudis__text text--MS">
-                                Tasemekatseks valmistumisel tuleb koeraga teha erinevaid suunamisharjutusi, harjutada nii põllul, metsas, roostikus kui
-                                ka vees ning pikendada äratoomise vahemaad ja otsinguala ulatust. Katsete eel on kasulik teha koos teiste koerte ja
-                                koerajuhtidega trenni, et koerad harjuksid töötama ka häirijate juuresolekul. Ühistreeningud on mugavad ka selle tõttu,
+                                Tasemekatseks valmistumisel tuleb koeraga teha erinevaid suunamisharjutusi, harjutada
+                                nii põllul, metsas, roostikus kui
+                                ka vees ning pikendada äratoomise vahemaad ja otsinguala ulatust. Katsete eel on kasulik
+                                teha koos teiste koerte ja
+                                koerajuhtidega trenni, et koerad harjuksid töötama ka häirijate juuresolekul.
+                                Ühistreeningud on mugavad ka selle tõttu,
                                 kuna mitmete harjutuste edukaks läbiviimiseks on vajalik abiliste olemasolu.
                             </p>
                         </div>
@@ -596,27 +729,27 @@
                     <div class="footer__content">
                         <div class="content__navigate">
                             <div class="navigate__item">
-                                <a href="#" class="navigate__link">
+                                <a href="../uhing.html" class="navigate__link">
                                     <h6 class="navigate__title">Ühing</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../naitused.html" class="navigate__link">
                                     <h6 class="navigate__title">Näitused</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../uritused.html" class="navigate__link">
                                     <h6 class="navigate__title">Üritused</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../toust.html" class="navigate__link">
                                     <h6 class="navigate__title">Labrador</h6>
                                 </a>
                             </div>
                             <div class="navigate__item">
-                                <a href="#" class="navigate__link">
+                                <a href="../kutsikad.html" class="navigate__link">
                                     <h6 class="navigate__title">kutsikad</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../harrastused.html" class="navigate__link">
                                     <h6 class="navigate__title">harrastused</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../uudised.html" class="navigate__link">
                                     <h6 class="navigate__title">uudised</h6>
                                 </a>
                             </div>

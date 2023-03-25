@@ -12,7 +12,47 @@
 
 <body>
     <div class="page-content-wrapper">
+        <!-- <div class="def-modal modal-bg">
+            <div class="def-modal__outer-container">
+                <div class="def-modal__inner-container">
+                    <div class="def-modal__wrapper modal-window">
+                        <div class="def-modal__img">
+        
+                        </div>
+                        <div class="def-modal__info">
+                            <div class="def-modal__cross modal-cross"></div>
+                            <div class="def-modal__content">
+                                <div class="def-modal__title">
+                                    <h2 class="def-modal__title-text">
+                                        Liituge ühinguga
+                                    </h2>
+                                </div>
+                                <form action="" method="get">
+                                    <label for="username">Ees- ja perekonnanimi</label>
+                                    <input type="text" name="username" id="username"
+                                        placeholder="Sisestage oma ees-ja perekonnanimi">
+                                    <label for="number">Isikukood</label>
+                                    <input type="number" name="number" id="number" placeholder="Sisestage oma isikukood">
+                                    <label for="telefon">Telefoninumber</label>
+                                    <input type="number" name="telefon" id="telefon" placeholder="Sisestage oma number">
+                                    <label for="adress">Aadress</label>
+                                    <input type="email" name="adress" id="adress" placeholder="Sisestage oma aadress">
+                                </form>
+                                <button type="submit">
+                                    Edasi
+                                </button>
+                                <div class="def-modal__aviso">
+                                    <p class="def-modal__aviso-text">Klõpsates nuppu "Edasi", nõustute isikuandmete töötlemisega
+                                        ja nõustute privaatsuspoliitikaga</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
         <header id="home" class="header">
+            
             <container class="container">
                 <div class="header__logo ibg ibg--contain">
                     <img src="assets/img/logo.png" alt="logotype" class="logo__img">
@@ -164,6 +204,7 @@
                 </div>
             </container>
         </header>
+        
 
     <section class="uhing">
         <div class="uhing-bcg ibg ibg--cover">
@@ -195,7 +236,7 @@
                     <a id="uhing" href="../uhing.html" class="title__text">Ühing</a>
                 </div>
                 <div class="links__link">
-                    <a id="connect" href="../connect.html" class="link__text">Liikmeks astumine</a>
+                    <a id="connect" href="../connect.html#info" class="link__text">Liikmeks astumine</a>
                 </div>
                 <div class="links__link">
                     <a id="rules" href="../rules.html" class="link__text">Põhikiri</a>
@@ -340,12 +381,12 @@
                                         <p class="toust__content-text text--MS">
                                             Puusadüsplaasia all mõistetakse puusaliigese ebanormaalset arengut. Selle põhjuseks on mitmed geneetilised ja omandatud
                                             muutused puusanapas, reieluupeas ja liigesekapslis.
-                                            <span class="readmore__hide" data-readmore-identifier="readmore">
+                                            <span class="read__hide" data-readmore-identifier="readmore">
                                                 Muutusi liigeses mõõdetakse röntgenpildi abil ja hinnatakse astmetega A – E, millest A tähistab normaalset liigest, B
                                                 normaalilähedast liigest, C kerget düsplaasiat, D keskmist düpslaasiat ja E rasket düsplaasiat.
                                             </span>
                                         </p>
-                                        <span class="readmore__hide" data-readmore-identifier="readmore">
+                                        <span class="read__hide" data-readmore-identifier="readmore">
                                             <div class="toust__content-wrap">
                                                 <p class="toust__content-text text--MS">
                                                     Sõltuvalt tulemusest võib puusaliigese düsplaasia mõjutada koera igapäevast elu ja seab piirangud ka koera
@@ -364,7 +405,7 @@
                                                 </div>
                                             </div>
                                         </span>
-                                        <btn class="readmore" id="readmore">
+                                        <btn class="read readmore" id="readmore">
                                             <svg class="toust__arrow">
                                                 <use href="assets/img/symbol-defs.svg#icon-drop-down"></use>
                                             </svg>
@@ -382,14 +423,14 @@
                                         <p class="toust__content-text text--MS">
                                             Küünarliigese düsplaasiaks nimetatakse kodarluu ja küünarluu ebaühtlasest kasvust tingitud muutusi, mis põhjustavad
                                             longet ennekõike suurt kasvu koertel.
-                                            <span class="readmore__hide" data-readmore-identifier="readmore2">
+                                            <span class="read__hide" data-readmore-identifier="readmore2">
                                                 Küünarliigese düsplaasia on kõige rohkem esinevaks esijäseme lonke põhjustajaks, mis raskema vormi korral võib looma
                                                 täielikult sandistada. Sageli esineb patoloogia mõlemas esijäseme küünarliigeses samaaegselt. Seetõttu võib longe olla
                                                 ebaselgelt väljendunud ning jääda isegi märkamata. Küünarliigese düsplaasia on selles tõus maailmas kõige levinum
                                                 liigeseprobleem.
                                             </span>
                                         </p>
-                                        <span class="readmore__hide" data-readmore-identifier="readmore2">
+                                        <span class="read__hide" data-readmore-identifier="readmore2">
                                             <div class="toust__content-wrap">
                                                 <p class="toust__content-text text--MS">
                                                     Seda uuritakse enamasti röntgenpildi abil, uuringu tulemus märgitakse astmetega 0 – 3, millest 0 tähistab normaalset
@@ -443,7 +484,7 @@
                                                 </div>
                                             </div>
                                         </span>
-                                        <btn class="readmore" id="readmore2">
+                                        <btn class="read readmore" id="readmore2">
                                             <svg class="toust__arrow">
                                                 <use href="assets/img/symbol-defs.svg#icon-drop-down"></use>
                                             </svg>
@@ -461,7 +502,7 @@
                                             PRA – progresseeruv reetina ehk võrkkesta atroofia (PRA) on üldnimetus grupile koerte pärilikele võrkkestahaigustele.
                                             Eestis pole seda labradoridel veel leitud, kuid mujal maailmas esineb seda mõõdukalt.
                                         </p>
-                                        <span class="readmore__hide" data-readmore-identifier="readmore3">
+                                        <span class="read__hide" data-readmore-identifier="readmore3">
                                             <div class="toust__content-wrap">
                                                 <p class="toust__content-text text--MS">
                                                     On olemas mitmeid liigitusi sellele haigusterühmale lähtuvalt haiguse ilmnemise east ja võrkkesta haigusnähtudest, kuid
@@ -538,7 +579,7 @@
                                             <div class="toust__content-pictures">
                                             </div>
                                         </span>
-                                        <btn class="readmore" id="readmore3">
+                                        <btn class="read readmore" id="readmore3">
                                             <svg class="toust__arrow">
                                                 <use href="assets/img/symbol-defs.svg#icon-drop-down"></use>
                                             </svg>
@@ -557,7 +598,7 @@
                                         <p class="toust__content-text text--MS">
                                             Erinevad nahaprobleemid ja –haigused ja allergiad: Labradoridel esineb mitmesuguseid nahaprobleeme, tegemist võib olla
                                             sügeluse, kõõmaerituse, kuiva naha või põletikega.
-                                            <span class="readmore__hide" data-readmore-identifier="readmore4">
+                                            <span class="read__hide" data-readmore-identifier="readmore4">
                                                 Paljudel juhtudel on ühiseks nimetajaks allergia. Allergilise isendi immuunsussüsteem toimib liiga tugevalt ja organism
                                                 võitleb ka selliste ainete vastu, mis on ohutud. Toiduallergia puhul on enamasti tegemist sealiha, loomaliha, erinevate
                                                 teraviljade või piimaallergiaga. Mõnevõrra esineb tolmuallergiat. Allergiate pärandumismehhanismi ei tunta, kuid on
@@ -567,7 +608,7 @@
                                                 koerte arvu suurenemisega.
                                             </span>
                                         </p>
-                                        <span class="readmore__hide" data-readmore-identifier="readmore4">
+                                        <span class="read__hide" data-readmore-identifier="readmore4">
                                             <div class="toust__content-wrap">
                                                 <p class="toust__content-text text--MS">
                                                     Vesisaba – tüüpiline retriivereid puudutav sündroom. Tavaliselt pärast ujumist ilmnev sabajuure „kangus“, mille tõttu
@@ -684,7 +725,7 @@
                                                 </div>
                                             </div>
                                         </span>
-                                        <btn class="readmore" id="readmore4">
+                                        <btn class="read readmore" id="readmore4">
                                             <svg class="toust__arrow">
                                                 <use href="assets/img/symbol-defs.svg#icon-drop-down"></use>
                                             </svg>
@@ -703,11 +744,11 @@
                                         <p class="toust__content-text text--MS">
                                             Osad haigustest, mida labradori retriiveritel esineda võib, on põhjustatud geenimutatsiooni poolt, mida saab testida.
                                             Nende haiguste hulka kuuluvad lihaskärbumishaigus CNM müopaatia,
-                                            <span class="readmore__hide" data-readmore-identifier="readmore4">
+                                            <span class="read__hide" data-readmore-identifier="readmore4">
                                                 narkolepsia, hemofiilia B – verejooksuhaigus, Exercise Induced Collapse (EIC) ja eelpool mainitud silmahaigus PRA.
                                             </span>
                                         </p>
-                                        <span class="readmore__hide" data-readmore-identifier="readmore5">
+                                        <span class="read__hide" data-readmore-identifier="readmore5">
                                             <div class="toust__content-wrap">
                                                 <p class="toust__content-text text--MS">
                                                     Narkolepsia – labradoridel harva esinev pärilik haigus, mille põdeja jääb hetkega uimaseks ja tema lihastoonus kaob
@@ -798,7 +839,7 @@
                                                 </div>
                                             </div>
                                         </span>
-                                        <btn class="readmore" id="readmore5">
+                                        <btn class="read readmore" id="readmore5">
                                             <svg class="toust__arrow">
                                                 <use href="assets/img/symbol-defs.svg#icon-drop-down"></use>
                                             </svg>
@@ -906,27 +947,27 @@
                     <div class="footer__content">
                         <div class="content__navigate">
                             <div class="navigate__item">
-                                <a href="#" class="navigate__link">
+                                <a href="../uhing.html" class="navigate__link">
                                     <h6 class="navigate__title">Ühing</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../naitused.html" class="navigate__link">
                                     <h6 class="navigate__title">Näitused</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../uritused.html" class="navigate__link">
                                     <h6 class="navigate__title">Üritused</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../toust.html" class="navigate__link">
                                     <h6 class="navigate__title">Labrador</h6>
                                 </a>
                             </div>
                             <div class="navigate__item">
-                                <a href="#" class="navigate__link">
+                                <a href="../kutsikad.html" class="navigate__link">
                                     <h6 class="navigate__title">kutsikad</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../harrastused.html" class="navigate__link">
                                     <h6 class="navigate__title">harrastused</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../uudised.html" class="navigate__link">
                                     <h6 class="navigate__title">uudised</h6>
                                 </a>
                             </div>

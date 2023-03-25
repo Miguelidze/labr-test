@@ -12,7 +12,47 @@
 
 <body>
     <div class="page-content-wrapper">
+        <!-- <div class="def-modal modal-bg">
+            <div class="def-modal__outer-container">
+                <div class="def-modal__inner-container">
+                    <div class="def-modal__wrapper modal-window">
+                        <div class="def-modal__img">
+        
+                        </div>
+                        <div class="def-modal__info">
+                            <div class="def-modal__cross modal-cross"></div>
+                            <div class="def-modal__content">
+                                <div class="def-modal__title">
+                                    <h2 class="def-modal__title-text">
+                                        Liituge ühinguga
+                                    </h2>
+                                </div>
+                                <form action="" method="get">
+                                    <label for="username">Ees- ja perekonnanimi</label>
+                                    <input type="text" name="username" id="username"
+                                        placeholder="Sisestage oma ees-ja perekonnanimi">
+                                    <label for="number">Isikukood</label>
+                                    <input type="number" name="number" id="number" placeholder="Sisestage oma isikukood">
+                                    <label for="telefon">Telefoninumber</label>
+                                    <input type="number" name="telefon" id="telefon" placeholder="Sisestage oma number">
+                                    <label for="adress">Aadress</label>
+                                    <input type="email" name="adress" id="adress" placeholder="Sisestage oma aadress">
+                                </form>
+                                <button type="submit">
+                                    Edasi
+                                </button>
+                                <div class="def-modal__aviso">
+                                    <p class="def-modal__aviso-text">Klõpsates nuppu "Edasi", nõustute isikuandmete töötlemisega
+                                        ja nõustute privaatsuspoliitikaga</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
         <header id="home" class="header">
+            
             <container class="container">
                 <div class="header__logo ibg ibg--contain">
                     <img src="assets/img/logo.png" alt="logotype" class="logo__img">
@@ -164,6 +204,7 @@
                 </div>
             </container>
         </header>
+        
     <div id="info" data-current-page-id="harrastused-a"></div>
     <section class="uhing">
         <div class="uhing-bcg ibg ibg--cover">
@@ -198,7 +239,7 @@
                     <a id="uhing" href="../uhing.html" class="title__text">Ühing</a>
                 </div>
                 <div class="links__link">
-                    <a id="connect" href="../connect.html" class="link__text">Liikmeks astumine</a>
+                    <a id="connect" href="../connect.html#info" class="link__text">Liikmeks astumine</a>
                 </div>
                 <div class="links__link">
                     <a id="rules" href="../rules.html" class="link__text">Põhikiri</a>
@@ -342,12 +383,12 @@
                             </div>
                         </div>
                         <div class="uudis__content">
-                            <div class="harrast__content harrast__content">
+                            <div class="harrast__content">
                                 <div class="harrast__item">
                                     <div class="harrast__title">
                                         <h4 class="harrast__text text--MS">Kuulekuskoolitus (KK)</h4>
                                     </div>
-                                    <p class="uudis__text text--MS">
+                                    <p class="uudis__text text--MS m--b-45">
                                         Kuulekuskoolituse kaudu õpetatakse koerale (ka tavaelus) vajalikke oskusi ning koera omanikule, kuidas koerale uusi
                                         vajalikke oskusi edastada. Eksamitel ja võistlustel kontrollitakse koolituse tulemusi ehk koera ja koerajuhi vahelist
                                         koostööd ning seda, kui korrektselt koer kõik harjutused omandanud on. Eesmärgiks on ka koerasõbraliku õhkkonnaga
@@ -364,181 +405,141 @@
                                     </p>
                                 </div>
                                 <div class="harrast__item">
-                                    <div class="harrast__img harrast__img--sm">
+                                    <div class="harrast__img harrast__img--m32">
                                         <img src="assets/img/muud.jpg" alt="">
                                     </div>
                                     <div class="harrast__link-wrap">
-                                        <a href="" class="harrast__link"></a>
-                                        <div class="harrast__arrow">
-                                            <img src="assets/img/main-arrow.png" alt="arrow" class="more__picture">
-                                        </div>
-                                        <h5 class="harrast__link-text">Sõnakuulelikkuse koolituse eeskiri</h5>
+                                        <a href="http://kennelliit.ee/wp-content/uploads/2014/04/SK_voistluste_eeskirjad_ja_juhendid.pdf" class="harrast__link">
+                                            <div class="harrast__arrow">
+                                                <img src="assets/img/main-arrow.png" alt="arrow" class="more__picture more__picture--harrast">
+                                            </div>
+                                            <h5 class="harrast__link-text">Sõnakuulelikkuse koolituse eeskiri</h5>
+                                        </a> 
                                     </div>
                                 </div>
                             </div>
                             <div class="harrast__title">
-                                <h4 class="harrast__text text--MS">Hinnatavad omadused</h4>
+                                <h4 class="harrast__text text--MS">Veepääste (VP)</h4>
                             </div>
                             <p class="uudis__text text--MS">
-                                Katse alguses eeldatakse, et jahimees on lasknud teatud koguse saaki. Mõned
-                                kukkumiskohad on täpselt teada, mõne kohta
-                                teatakse vaid ligikaudne asukoht. Katse ajal jäljendatakse osade lindude tabamist
-                                püssilasu ja viskega ning koerale
-                                antakse võimalus jätta kukkumiskohad meelde. Ülesandeid võib olla mitu nii maal kui
-                                vees.
-                            </p>
-                            <p class="uudis__text text--MS">
-                                Kuigi tasemekatse käigus sooritatavad ülesanded luuakse igal korral veidi erinevad
-                                vastavalt maastikule ning
-                                kujutletavale jahiolukorrale selles maastikus, sooritatakse katse jooksul kindlasti
-                                kolme liiki retriivimisülesandeid,
-                                milleks on markeerimine, juhtimine ja otsimine. Lisaks tehakse algklassis ka jäljetöö
-                                ülesanne.
+                                Veepääste (VP) koolituse eesmärgiks on aktiivne vaba aja veetmine koos koeraga. Veepääste koolituse üheks eesmärgiks on
+                                koerte koolitamise ja koerte veepääste koolituse populariseerimine Eestis. Veepääste koolitus baseerub koera loomuomasel
+                                veeinstinktil ning koera ja koerajuhi vahelisel koostööl. Koer ei ole veepäästes iseseisev päästja, vaid ta on inimese
+                                abiline koos oma instinktide, füüsilise võimekuse ja inimesele orienteeritusega.
                             </p>
                             <div class="harrast__content harrast__content">
                                 <div class="harrast__item">
-                                    <div class="harrast__img harrast__img--sm">
-                                        <img src="assets/img/tasemekatse2.jpg" alt="">
+                                    <div class="harrast__img harrast__img--m32">
+                                        <img src="assets/img/muud1.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="harrast__item">
-                                    <div class="harrast__title">
-                                        <h4 class="harrast__text text--MS">Markeerimisülesanne</h4>
+                                    <div class="harrast__img harrast__img--m32">
+                                        <img src="assets/img/muud2.jpg" alt="">
                                     </div>
-                                    <p class="uudis__text text--MS">
-                                        Markeerimisülesandel hinnatakse koera võimet määrata saagi kukkumiskoht ja seda
-                                        meelde jätta. Tavaliselt tehakse üks või
-                                        kaks viset kas maalt või paadist vette või roostikku. Saagi kukkumist on koeral
-                                        võimalik jälgida ning koos visetega
-                                        tehakse ka püssilasud. Saades loa, peab koer kukkunud saagi ära tooma. Suunavaid
-                                        käsklusi ei tohi seejuures kasutada.
-                                    </p>
+                                    <div class="harrast__link-wrap--right">
+                                        <a href="http://kennelliit.ee/wp-content/uploads/2019/06/VPeeskiri_2019.pdf" class="harrast__link">
+                                            <div class="harrast__arrow">
+                                                <img src="assets/img/main-arrow.png" alt="arrow" class="more__picture more__picture--harrast">
+                                            </div>
+                                            <h5 class="harrast__link-text">Veepääste eeskiri</h5>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <p class="uudis__text text--MS">
-                                Algklassis võib markeerimisülesanne koosneda kahest ühekordsest markeeringust, mis
-                                tähendab, et koos püssilasuga
-                                visatakse lind ning koer lubatakse peale seda saaki tooma, seejärel tehakse sama
-                                veelkord uuesti. Avaklassis ja vahel ka
-                                algklassis tehakse aga kohe kahene markeering, mis tähendab, et esimese püssilasuga
-                                visatakse esimene lind ning teise
-                                püssilasuga teine lind. Koer peab senikaua ootama ning ära tooma mõlemad linnud.
-                                Võitjaklassis võidakse ka määrata kumb
-                                visatud lindudest tuleb tuua ära esimesena.
-                            </p>
-                            <p class="uudis__text text--MS">
-                                Algklassis tehakse markeeringud selliselt, et neist ühe kukkumiskohta koer näeb ning
-                                teise täpne koht pole nähtav,
-                                näiteks üks visatakse avavette ja teine roostikku. Avaklassis ei ole aga enam kummagi
-                                viske täpne asukoht kaugelt nähtav
-                                ning võitjaklassis võidakse teha ka kolmene markeering.
-                            </p>
                             <div class="harrast__title">
-                                <h4 class="harrast__text text--MS">Juhtimisülesanne</h4>
+                                <h4 class="harrast__text text--MS">Agility (AG)</h4>
                             </div>
-                            <p class="uudis__text text--MS">
-                                Juhtimisülesande puhul ei tea koer saagi asukohta ning koerajuhi ülesandeks on
-                                häälkäsklusi, käemärke ja ka vilet
-                                kasutades juhatada koer soovitud kohta. Koer ei tohi antud ülesannet lahendada
-                                otsinguna, vaid peab lähtuma liikumisel
-                                koerajuhi käsklustest – edasi, parem, vasak, stop/seis, otsi, mida antakse häälkäskluse
-                                ning käemärkidega.
-                            </p>
-                            <p class="uudis__text text--MS">
-                                Algklassis on juhtimisülesande eesmärgiks, et koer suudaks sirgjooneliselt edasi liikuda
-                                30-40 m. Avaklassis on
-                                juhtimisülesande sooritamiseks vajalik kasutada ka juba teisi suunamiskäsklusi ning
-                                vahemaa on pikem. Alates avaklassist
-                                võib juhtimisülesanne toimuda vees, võitjaklassis algusega juba kaldast eemalt
-                                maastikust suundudes edasi vette.
-                            </p>
                             <div class="harrast__content harrast__content">
                                 <div class="harrast__item">
-                                    <div class="harrast__title">
-                                        <h4 class="harrast__text text--MS">Otsimisülesanne</h4>
-                                    </div>
                                     <p class="uudis__text text--MS">
-                                        Otsimisalale on sarnaselt tõukatsega paigutatud teatud arv linde, kuid võrreldes
-                                        tõukatsega on äratoomisvahemaad pikemad
-                                        (kuni 150m). Osa või koguni terve otsingualast võib olla roostikus ja vees.
-                                        Koera juhtimine otsingualal pole lubatud,
-                                        koer peab töötama iseseisvalt. Hea tulemuse saavutamiseks peaks koer töötama
-                                        otsingualal saagi leidmiseni, korduvalt
-                                        tühjalt koerajuhi juurde naasmine võib alandada järku.
+                                        Agility eesmärgiks on arendada koerte liikuvust ja arukust, õpetades neid sooritama erinevaid takistusi (tunnelid,
+                                        A-takistus, slaalom, poom, rõngas, müür, kaugushüpe). Agility kui hariva ja sportliku tegevuse abil sotsialiseeritakse
+                                        koeri. Agility nõuab koera ja koerajuhi vahelist head koostööd, kuivõrd agility rada on igakord erinev. Agilitys on
+                                        oluline nii osavus kui kiirus. Võistlusrada tuleb läbida võimalikult väheste vigadega ja võimalikult kiiresti.
                                     </p>
                                 </div>
                                 <div class="harrast__item">
-                                    <div class="harrast__img harrast__img--sm">
-                                        <img src="assets/img/tasemekatse3.jpg" alt="">
+                                    <div class="harrast__img harrast__img--m32">
+                                        <img src="assets/img/muud3.jpg" alt="">
+                                    </div>
+                                    <div class="harrast__link-wrap--right">
+                                        <a href="http://kennelliit.ee/wp-content/uploads/2018/09/KKK-21-02_2018_FCI-Agility-eeskirjad.pdf"
+                                            class="harrast__link">
+                                            <div class="harrast__arrow">
+                                                <img src="assets/img/main-arrow.png" alt="arrow" class="more__picture more__picture--harrast">
+                                            </div>
+                                            <h5 class="harrast__link-text">Agility eeskiri</h5>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
+                            <div class="harrast__title harrast__title--right">
+                                <h4 class="harrast__text text--MS">Teraapiakoerad (koeri kaasavad sekkumised)</h4>
+                            </div>
+                            <div class="harrast__content harrast__content">
+                                <div class="harrast__item">
+                                    <div class="harrast__img harrast__img--sm">
+                                        <img src="assets/img/muud4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="harrast__item">
+                                    <p class="uudis__text uudis__text--end text--MS">
+                                        Koeri kaasav sekkumine on eesmärgipärane tegevus, mis tervishoiu, sotsiaaltöö ja hariduse valdkonnas ning teistes
+                                        inimestele suunatud teenuste valdkondades teraapiliste tulemuste saavutamiseks kaasab teadlikult ja sihipäraselt
+                                        protsessi koeri. Sekkumistes osalevad professionaalid, kes tunnevad neis osalevaid inimesi ja koeri. Sekkumistes
+                                        osalevad teraapiakoeratiimid koosnevad koerajuhist ja koerast ning nendega koos töötavast eksperdist (sotsiaaltöötajast,
+                                        pedagoogist, terapeudist jne) vastavalt teenuse iseloomule ja vajadusele. Koeri kaasavas sekkumiseks osalemiseks tuleb
+                                        koeraga koeraga läbida sobivustestimine, osaleda baaskoolitusel ning teraapiakoeratiimi eksamil.
+                                    </p>
+                                </div>
+                            </div>
                             <div class="harrast__title">
-                                <h4 class="harrast__text text--MS">Jäljeülesanne</h4>
+                                <h4 class="harrast__text text--MS">BH – ühiskonnakõlblikkusekatse</h4>
                             </div>
                             <p class="uudis__text text--MS">
-                                Jälg veetakse ainult algklassis ning seda vaid I järgu vääriliselt tööd teinud koertele
-                                ja selle pikkus on umbes 200 m.
-                                Koerale ei näidata jälje algust, vaid ta saadetakse jälje suunas umbes 10 m kauguselt.
+                                Ühiskonnakõlblikkuse test koosneb koera ligipääsetavustestist (kiibi kontrollimine), platsil sooritatavatest
+                                kuulekusharjutustest (kõrvalkõnd rihmaga ja rihmata, juurdetulek, püsivus, liikumiselt istumine) ja linnaosast
+                                (suhtumine inimrühma, autodesse, jooksjatesse, teistesse koertesse, jalgratturitesse, liiklusesse), mis tuleb üksteise
+                                järel sooritada. BH test on paljudes riikides eelduseks, et koer saaks üldse võistlustel või eksamitel osaleda. Eestis
+                                on BH katse sooritamine nõutav rahvusvahelise teenistuskoerte ja jäljekoerte töökatsetel osalemisel, kuid BH katse sobib
+                                hästi noortele alles võistlemist alustavatele koertele esimeseks ametlikuks katseks.
                             </p>
-                            <p class="uudis__text text--MS">
-                                Vastavalt võistlusklassile tehakse ülesanded keerulisemaks pikendades vahemaid,
-                                suurendades visatava saagi arvu ning
-                                raskendades maastikku. Algklassis on katse toimumise ala taimestik suhteliselt avatud
-                                nii vees kui ka maastikul, kuid
-                                siiski piisavalt tihe, et saak oleks enamus ülesannete puhul väljaspool koera
-                                nägemisulatust. Avaklassis on taimestik
-                                tihe nii vees kui ka maastikul. Mida kõrgem võistlusklass, seda enam ülesandeid tuleb
-                                sooritada vees. Võitjaklassis
-                                toimub suurem osa katsest juba veetööna.
-                            </p>
+                            <div class="harrast__link-wrap m--b-35">
+                                <a href="http://kennelliit.ee/wp-content/uploads/2013/11/IPO2012.pdf"
+                                    class="harrast__link harrast__link--start">
+                                    <div class="harrast__arrow">
+                                        <img src="assets/img/main-arrow.png" alt="arrow" class="more__picture more__picture--harrast">
+                                    </div>
+                                    <h5 class="harrast__link-text">BH eeskiri (lk 20-25)</h5>
+                                </a>
+                            </div>
                             <div class="harrast__title">
-                                <h4 class="harrast__text text--MS">Valmistumine tasemekatseks</h4>
+                                <h4 class="harrast__text text--MS">Pääste- ja otsingukoerad (IPO-R)</h4>
                             </div>
                             <p class="uudis__text text--MS">
-                                Tõukatse läbinuna peaks koer oskama tuua esemeid maalt ja veest, otsida ning jälge
-                                ajada. Tasemekatseks valmistumisel
-                                tuleb koerale õpetada lisaks suunamist – õpetada koera liikuma edasi, paremale või
-                                vasakule ning peatuma. Juhul, kui
-                                koera oskab edasi liikuda juba pikal distantsil, siis võib algklassis saada
-                                suunamisülesandel hakkama teisi
-                                suunamiskäsklusi kasutamata. Seega ei pea selles klassis võistlemiseks veel teised
-                                suunavad käsklused selged olema.
+                                Väga praktiline koolitusala, mis koosneb maa-ala otsingust (RH-FL), varinguotsingust (RH-T), jäljekatsest (RH-F) ning
+                                kuulekusest ja osavusest. Maa-alaotsingus otsib koer koerajuhi korraldusel etteantud aja jooksul läbi ettenähtud
+                                maa-ala, reageerides õhu kaudu levivale lõhnale. Vastavalt raskusastmele tuleb leida kõik peidetud figurandid.
+                                Varinguotsingu all mõeldakse eelkõige otsingut rusudel või varisenud hoones, kus võimalikud ohvrid on mattunud rusude
+                                alla ega ole nähtaval. Varingupinnasel liikumine on keeruline ning nõuab koertelt väga head liikuvust ja vastupidavust.
+                                Harjutusväljakutel kasutatakse figurantide peitmiseks kinniseid peidikuid, kus koer peab markeerima lõhna leidmist selle
+                                koha peal kust lõhn kõige tugevam on. Päästejälg on väga praktiline koolitusala, koertele on nina kasutamine lõhna
+                                ajamiseks maad mööda kulgeval jäljel väga loomuomane tegevus ning piisava treenituse ja kogemustepagasi juures suudab
+                                koer ajada ka mitme kilomeetri pikkuseid jälgi. Päästejälg võib kulgeda üle erinevate maastikkude, põld võib vahelduda
+                                metsaga või soise pinnase, jälg võib minna üle teede ja kraavide.
                             </p>
-                            <p class="uudis__text text--MS">
-                                Samuti peaks harjutatama täpsemat markeerimist ehk saagi kukkumiskoha määramist ning
-                                teha mälutreeningut, kus tuleb
-                                mitme eseme kukkumiskohad meelde jätta.
-                            </p>
-                            <p class="uudis__text text--MS">
-                                Kogu katse vältel peab koer olema ilma rihmata, mis eeldab koeralt head kuulekust ning
-                                koostööd koerajuhiga. Saaki tooma
-                                minna tohib koer vaid koerajuhilt selleks loa saades ja koer peab suutma jääda paigale
-                                ka püssilasu kõlades.
-                                Võitjaklassis võib töö toimuda paaristööna ning siis peab koer jälgima teise koera tööd
-                                ise samal ajal rahulikuks ja
-                                vaikseks jäädes.
-                            </p>
-                            <p class="uudis__text text--MS">
-                                Kui tõukatsel on reeglina kasutatakse parte ja faasaneid, siis tasemekatsel on lisaks
-                                kasutusel ka varesed ja kajakad.
-                                Seega tuleb koerale tutvustada erinevat saaki. Otsingualalt võib leida kõiki linde ning
-                                vahel pannakse sinna ka jänes.
-                            </p>
-                            <p class="uudis__text text--MS">
-                                Lisaks pööratakse rohkem tähelepanu saagi loovutamisele, sest tasemekatsel peaks koer
-                                tooma saagi koerajuhile kätte ning
-                                korduv saagi maha pillamine või saagi mitte kätte toomine alandavad järku.
-                            </p>
-                            <p class="uudis__text text--MS">
-                                Tasemekatseks valmistumisel tuleb koeraga teha erinevaid suunamisharjutusi, harjutada
-                                nii põllul, metsas, roostikus kui
-                                ka vees ning pikendada äratoomise vahemaad ja otsinguala ulatust. Katsete eel on kasulik
-                                teha koos teiste koerte ja
-                                koerajuhtidega trenni, et koerad harjuksid töötama ka häirijate juuresolekul.
-                                Ühistreeningud on mugavad ka selle tõttu,
-                                kuna mitmete harjutuste edukaks läbiviimiseks on vajalik abiliste olemasolu.
-                            </p>
+                            <div class="harrast__img harrast__img--m32">
+                                <img src="assets/img/muud5.jpg" alt="">
+                            </div>
+                            <div class="harrast__link-wrap">
+                                <a href="http://kennelliit.ee/wp-content/uploads/2013/11/IPO2012.pdf" class="harrast__link harrast__link--start">
+                                    <div class="harrast__arrow m--r-40">
+                                        <img src="assets/img/main-arrow.png" alt="arrow" class="more__picture more__picture--harrast">
+                                    </div>
+                                    <h5 class="harrast__link-text">IPO-R eeskiri</h5>
+                                </a>
+                            </div>
                         </div>
                     </section>
                 </section>
@@ -639,27 +640,27 @@
                     <div class="footer__content">
                         <div class="content__navigate">
                             <div class="navigate__item">
-                                <a href="#" class="navigate__link">
+                                <a href="../uhing.html" class="navigate__link">
                                     <h6 class="navigate__title">Ühing</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../naitused.html" class="navigate__link">
                                     <h6 class="navigate__title">Näitused</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../uritused.html" class="navigate__link">
                                     <h6 class="navigate__title">Üritused</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../toust.html" class="navigate__link">
                                     <h6 class="navigate__title">Labrador</h6>
                                 </a>
                             </div>
                             <div class="navigate__item">
-                                <a href="#" class="navigate__link">
+                                <a href="../kutsikad.html" class="navigate__link">
                                     <h6 class="navigate__title">kutsikad</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../harrastused.html" class="navigate__link">
                                     <h6 class="navigate__title">harrastused</h6>
                                 </a>
-                                <a href="#" class="navigate__link">
+                                <a href="../uudised.html" class="navigate__link">
                                     <h6 class="navigate__title">uudised</h6>
                                 </a>
                             </div>
