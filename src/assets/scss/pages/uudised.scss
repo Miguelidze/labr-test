@@ -12,18 +12,18 @@
 .uudised {
   // .uudised__wrap
 
-  &__wrap{
+  &__wrap {
     margin: 0 auto 140px;
-     @media screen and (max-width: $smTabletWidth){
+    @media screen and (max-width: $smTabletWidth) {
       margin: 0 15px 100px;
-     }
-  } 
+    }
+  }
   // .uudised__switch
 
   &__switch {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
   }
 }
 .switch {
@@ -69,10 +69,10 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      @media screen and (max-width: $tabletWidth){
-     flex-direction: column;
-     align-items: center;
-    }
+      @media screen and (max-width: $tabletWidth) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 }
@@ -170,6 +170,9 @@
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    @media screen and (max-width: $smTabletWidth) {
+      width: 100%;
+    }
   }
 
   // .read-more__text-more
@@ -199,7 +202,6 @@
   // .uudis__wrap
 
   &__wrap {
-    
     padding: 60px;
     background: $bacground-pages;
     border-radius: 10px;
@@ -208,23 +210,26 @@
       padding: 40px;
     }
     @media screen and (max-width: $tabletWidth) {
+      margin: 0;
       padding: 30px;
     }
     @media screen and (max-width: $smTabletWidth) {
-      margin: 0;
       padding: 30px 15px;
     }
-    &--aasta{
+    &--aasta {
       margin: 0;
       width: 100%;
     }
-    &--breeders{
+    &--breeders {
       width: 100%;
       margin: 0;
       padding: 60px 35px;
       @media screen and (max-width: $tabletWidth) {
         padding: 40px 15px;
       }
+    }
+    &--uudis {
+      margin-bottom: 140px;
     }
   }
 
@@ -272,7 +277,7 @@
       }
     }
   }
-  &__img-f{
+  &__img-f {
     display: block;
     flex: 0 0 48%;
     aspect-ratio: 1.2;
@@ -292,9 +297,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    &--enne{
+    &--enne {
       justify-content: flex-start;
-      
     }
   }
 
@@ -338,9 +342,9 @@
     &:not(:last-child) {
       margin-bottom: 10px;
     }
-    &--end{
+    &--end {
       text-align: right;
-      @media screen and (max-width: $tabletWidth){
+      @media screen and (max-width: $tabletWidth) {
         text-align: left;
       }
     }
