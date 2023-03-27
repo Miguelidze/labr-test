@@ -253,6 +253,8 @@ div.hidden {
 }
 .preloader {
   position: fixed;
+  width: 100%;
+  height: 100%;
   left: 0;
   top: 0;
   right: 0;
@@ -261,45 +263,50 @@ div.hidden {
   &__row {
     display: flex;
     position: relative;
-    top: 0;
-    left: 0;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-    margin-top: -35px;
-    margin-left: -35px;
-    text-align: center;
-    animation: 2s infinite linear;
   }
   &__item {
+    width: 100%;
+    height: 100%;
     flex: 0 0 50%;
     background: linear-gradient(270deg, #3c3022 15.39%, #6f1d1b 100%);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 1, 0);
     border: none;
     &--rotate {
       rotate: 180deg;
     }
-    // position: absolute;
-    // display: inline-block;
-    // top: 0;
-    // background-color: #337ab7;
-    // border-radius: 100%;
-    // width: 35px;
-    // height: 35px;
-    // animation: preloader-bounce 2s infinite ease-in-out;
-    // &:last-child {
-    //   top: auto;
-    //   bottom: 0;
-    //   animation-delay: -1s;
-    // }
   }
   // .preloader__icon
 
   &__icon {
     position: absolute;
-    top: 20%;
-    left: 40%;
-    max-width: 387px;
     aspect-ratio: 0.9;
+    margin-top: -15px;
+    @media screen and (min-width: $desktopWidth) {
+      max-width: 387px;
+    }
+    @media screen and (max-width: $desktopWidth) {
+      width: 25%;
+    }
+    @media screen and (max-width: $smDesktopWidth) {
+      width: 30%;
+    }
+    @media screen and (max-width: $tabletWidth) {
+      width: 40%;
+    }
+    @media screen and (max-width: $smTabletWidth) {
+      width: 50%;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      width: 55%;
+      margin-top: 0;
+    }
+    @media screen and (max-width: $smPhoneWidth) {
+      max-width: 225px;
+    }
     & > img {
       width: 100%;
       height: 100%;
@@ -313,22 +320,26 @@ div.hidden {
     position: absolute;
     display: flex;
     align-items: center;
-    top: 65%;
-    left: 27%;
+    top: 72%;
+    @media screen and (max-width: $phoneWidth) {
+      top: 67%;
+    }
   }
 
   // .preloader__text
 
   &__text {
-    font-family: $primaryTextFont ;
+    text-align: center;
+    margin: 0 20px;
+    font-family: $primaryTextFont;
     font-style: normal;
     font-weight: 900;
     line-height: 48px;
     letter-spacing: 0.07em;
     text-transform: uppercase;
     color: $fontColorPrimary;
-    @media screen {
-      
+    @media screen and (max-width: $phoneWidth) {
+      text-transform: capitalize;
     }
   }
 }
@@ -358,61 +369,60 @@ div.hidden {
   display: none;
 }
 .def-modal {
+  // .def-modal__outer-container
 
-		// .def-modal__outer-container
+  &__outer-container {
+  }
 
-		&__outer-container {
-		}
+  // .def-modal__inner-container
 
-		// .def-modal__inner-container
+  &__inner-container {
+  }
 
-		&__inner-container {
-		}
+  // .def-modal__wrapper
 
-		// .def-modal__wrapper
+  &__wrapper {
+  }
 
-		&__wrapper {
-		}
+  // .def-modal__img
 
-		// .def-modal__img
+  &__img {
+  }
 
-		&__img {
-		}
+  // .def-modal__info
 
-		// .def-modal__info
+  &__info {
+  }
 
-		&__info {
-		}
+  // .def-modal__cross
 
-		// .def-modal__cross
+  &__cross {
+  }
 
-		&__cross {
-		}
+  // .def-modal__content
 
-		// .def-modal__content
+  &__content {
+  }
 
-		&__content {
-		}
+  // .def-modal__title
 
-		// .def-modal__title
+  &__title {
+  }
 
-		&__title {
-		}
+  // .def-modal__title-text
 
-		// .def-modal__title-text
+  &__title-text {
+  }
 
-		&__title-text {
-		}
+  // .def-modal__aviso
 
-		// .def-modal__aviso
+  &__aviso {
+  }
 
-		&__aviso {
-		}
+  // .def-modal__aviso-text
 
-		// .def-modal__aviso-text
-
-		&__aviso-text {
-		}
+  &__aviso-text {
+  }
 }
 .modal-bg {
 }

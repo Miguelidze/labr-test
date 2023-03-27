@@ -1,78 +1,105 @@
 <%- include('./incl/header.html')%>
-    <section class="kuulutus__wrap">
-        <div class="kuulutus__item-wrap">
-            <div class="kuulutus__title">
-                <h2 class="kuulutus__title-text">
-                    Uus kuulutus
-                </h2>
-            </div>
-            <div class="kuulutus__pretitle">
-                <h3 class="kuulutus__pretitle-text">
-                    Samm 1 - Põhiandmed
-                </h3>
-            </div>
-            <div class="kuultus__item">
-                <div class="kuultus__item-person">
-                    <div class="kuultus__item-person-wrap">
-                        <div class="kuultus__person-foto">
-                            <button type="submit" class="kuultus__img">
-                                <img src="../assets/img/icons/addimage.png" alt="">
-                            </button>
+    <div class="container-kuulutus">
+        <section class="kuulutus__wrap">
+            <div class="kuulutus__item-wrap">
+                <div class="kuulutus__title">
+                    <h2 class="kuulutus__title-text text--XL">
+                        Uus kuulutus
+                    </h2>
+                </div>
+                <div class="kuulutus__pretitle">
+                    <h3 class="kuulutus__pretitle-text text--L">
+                        Samm 1 - Põhiandmed
+                    </h3>
+                </div>
+                <div class="kuultus__item">
+                    <div class="kuultus__item-person">
+                        <div class="kuultus__item-person-wrap">
+                            <div class="kuultus__person-foto">
+                                <form action="addimage" method="post">
+                                    <input class="kuultus__img" type="file" multiple accept="image/*"
+                                        aria-placeholder="Lisage põhifoto">
+                                </form>
+                            </div>
+                            <div class="kuultus__person-info">
+                                <div class="person-info__pretitle">
+                                    <p class="person-info__text">
+                                        Kuulutuse lisamiseks sisestage kõik vajalikud andmed.
+                                    </p>
+                                </div>
+                                <div class="person-info__title">
+                                    <h2 class="person-info__title-text text--XL">
+                                        Kenneli nimi
+                                    </h2>
+                                </div>
+                                <div class="person-info__block-wrap">
+                                    <div class="person-info__block">
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="person">Kasvataja</label>
+                                            <input class="kuulutus-input" type="text" name="person" id="person"
+                                                placeholder="Sisestage nimi">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="date">Pesakonna sünniaeg</label>
+                                            <input class="kuulutus-input" type="date" name="date" id="date"
+                                                placeholder="Sisestage kuupäeva">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="time">Sisestage tekst</label>
+                                            <input class="kuulutus-input" type="text" name="time" id="time"
+                                                placeholder="Sisestage tekst">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="puppies">Kutsikate arv (sugu ja
+                                                värvus)</label>
+                                            <input class="kuulutus-input" type="text" name="puppies" id="puppies"
+                                                placeholder="Sisestage tekst">
+                                        </form>
+                                    </div>
+                                    <div class="person-info__block">
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="adress">Asukoht/Aadress</label>
+                                            <input class="kuulutus-input" type="text" name="adress" id="adress"
+                                                placeholder="Sisestage aadress">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="tel">Kontakttelefon</label>
+                                            <input class="kuulutus-input" type="tel" name="tel" id="tel"
+                                                placeholder="Sisestage telefon">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="mail">E-mail</label>
+                                            <input class="kuulutus-input" type="email" name="mail" id="mail"
+                                                placeholder="Sisestage e-mail">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="link">Kodulehekülg</label>
+                                            <input class="kuulutus-input" type="text" name="link" id="link"
+                                                placeholder="Sisestage link">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="kuultus__person-info">
-                            <div class="person-info__pretitle">
-                                <p class="person-info__text">
-                                    Kuulutuse lisamiseks sisestage kõik vajalikud andmed.
-                                </p>
-                            </div>
-                            <div class="person-info__title">
-                                <h2 class="person-info__title-text">
-                                    Kenneli nimi
-                                </h2>
-                            </div>
-                            <div class="person-info__block">
-                                <div class="person-info__item">
-                                    <form action="" method="get">
-                                        <label for="person">Kasvataja</label>
-                                        <input type="text" name="person" id="person" placeholder="Sisestage nimi">
-                                        <label for="date">Pesakonna sünniaeg</label>
-                                        <input type="date" name="date" id="date" placeholder="Sisestage kuupäeva">
-                                        <label for="time">Sisestage tekst</label>
-                                        <input type="text" name="time" id="time" placeholder="Sisestage tekst">
-                                        <label for="puppies">Kutsikate arv (sugu ja värvus)</label>
-                                        <input type="text" name="puppies" id="puppies" placeholder="Sisestage tekst">
-                                    </form>
-                                </div>
-                                <div class="person-info__item">
-                                    <form action="" method="get">
-                                        <label for="adress">Asukoht/Aadress</label>
-                                        <input type="text" name="adress" id="adress" placeholder="Sisestage aadress">
-                                        <label for="tel">Kontakttelefon</label>
-                                        <input type="tel" name="tel" id="tel" placeholder="Sisestage telefon">
-                                        <label for="mail">E-mail</label>
-                                        <input type="email" name="mail" id="mail" placeholder="Sisestage e-mail">
-                                        <label for="link">Kodulehekülg</label>
-                                        <input type="text" name="link" id="link" placeholder="Sisestage link">
-                                    </form>
-                                </div>
-                            </div>
+                        <div class="person-info__item">
+                            <form class="person-info__item" action="" method="get">
+                                <label class="kuulutus-label" for="comment">Lisainfo pesakonna ja/või kenneli
+                                    kohta</label>
+                                <input class="kuulutus-input kuulutus-input--comment" type="text" name="comment"
+                                    id="comment" placeholder="Sisestage kirjeldus">
+                            </form>
                         </div>
                     </div>
-                    <div class="person-info__item">
-                        <form action="" method="get">
-                            <label for="comment"></label>
-                            <input type="text" name="comment" id="comment" placeholder="Sisestage kirjeldus">
-                        </form>
+                    <div class="kuulutus__item-person">
+
                     </div>
                 </div>
-                <div class="kuultus__item-person">
-                
-                </div>
             </div>
-        </div>
-        <div class="kuulutus__item-wrap"></div>
-        <div class="kuulutus__item-wrap"></div>
-        <div class="kuulutus__item-wrap"></div>
-    </section>
-<%- include('./incl/partners.html')%>
-    <%- include('./incl/footer.html')%>
+            <div class="kuulutus__item-wrap"></div>
+            <div class="kuulutus__item-wrap"></div>
+            <div class="kuulutus__item-wrap"></div>
+        </section>
+    </div>
+
+    <%- include('./incl/partners.html')%>
+        <%- include('./incl/footer.html')%>

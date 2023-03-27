@@ -82,7 +82,6 @@
     fill: $mainFontColor;
     width: 27px;
     height: 27px;
-    rotate: 180deg;
   }
   &__btn {
     font-family: $secondaryTextFont;
@@ -95,7 +94,7 @@
     letter-spacing: 0.1em;
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
-    padding: 25px 18px;
+    padding: 20px 18px;
     border-radius: 8px;
     &--white {
       background: $fontColorPrimary;

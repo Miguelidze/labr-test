@@ -159,10 +159,13 @@
 .content-item {
   font-family: $secondaryTextFont;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 17px;
   line-height: 26px;
   color: $fontColorPrimary;
+  &--text{
+    font-weight: 700;
+  }
 }
 .send {
   // .send__form

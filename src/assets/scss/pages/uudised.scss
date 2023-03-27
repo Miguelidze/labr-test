@@ -203,7 +203,7 @@
     padding: 60px;
     background: $bacground-pages;
     border-radius: 10px;
-    margin: 0px 90px 140px;
+    margin: 0px 90px;
     @media screen and (max-width: $smDesktopWidth) {
       padding: 40px;
     }
@@ -211,7 +211,7 @@
       padding: 30px;
     }
     @media screen and (max-width: $smTabletWidth) {
-      margin: 0 0 60px;
+      margin: 0;
       padding: 30px 15px;
     }
     &--aasta{

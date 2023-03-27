@@ -10,8 +10,6 @@
 .def-container {
   display: flex;
   flex-direction: column;
-  padding-top: 15%;
-  // margin-bottom: 80px !important;
   @media screen and (min-width: $largeWidth) {
     width: $desktopWidth;
     margin: auto;
@@ -28,7 +26,6 @@
 
   @media screen and (max-width: $tabletWidth) {
     margin: 0 40px;
-    padding-top: 10%;
   }
   @media screen and (max-width: $smTabletWidth) {
     margin: 0px;
@@ -50,10 +47,16 @@
   // .def-container__info
 
   &__info {
-    position: relative;
+    position: absolute;
+    top: 280px;
     z-index: 2;
     width: 50%;
-    margin-bottom: 20%;
+    @media screen and (max-width: $smDesktopWidth) {
+      top: 180px;
+    }
+    @media screen and (max-width: $tabletWidth) {
+      top: 70px;
+    }
     @media screen and (max-width: $smTabletWidth) {
       display: none;
     }
@@ -72,10 +75,6 @@
     @media screen and (max-width: $desktopWidth) {
       margin-bottom: 15%;
     }
-    // &--ud{
-    //   z-index: 1;
-      
-    // }
   }
 
   // .def-container__title
@@ -88,7 +87,7 @@
     text-transform: uppercase;
     color: $fontColorPrimary;
     margin-bottom: 15px;
-    @media screen and (max-width: $smTabletWidth){
+    @media screen and (max-width: $smTabletWidth) {
       text-transform: capitalize;
     }
   }
@@ -155,7 +154,6 @@
       width: 100%;
     }
   }
-
 
   // .dfcontent__info-title
 
@@ -288,14 +286,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 250px;
-    @media screen and (max-width:$smTabletWidth){
+    @media screen and (max-width: $smTabletWidth) {
       height: auto;
       align-content: center;
     }
   }
-  &__listado-list{
+  &__listado-list {
     display: contents;
-
   }
   // .descr__member
 
@@ -308,9 +305,9 @@
     line-height: 24px;
     padding-left: 20px;
     color: $fontColorPrimary;
-    
+
     margin-bottom: 5px;
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       top: 5px;

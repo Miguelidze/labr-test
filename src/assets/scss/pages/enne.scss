@@ -28,11 +28,11 @@
 		&__info {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             flex: 0 0 45%;
-            padding: 60px 10px;
+            padding: 60px 20px;
 			@media screen and (max-width: $smDesktopWidth){
-				padding: 30px 10px;
+				padding: 20px 10px;
+				flex: 0 0 48%;
 			}
 			@media screen and (max-width: $smTabletWidth){
 				padding: 60px 10px;
@@ -46,6 +46,16 @@
 		// .enne__info-item
 
 		&__info-item {
+			&:not(:last-child){
+				margin-bottom: 50px;
+				@media screen and (max-width: $tabletWidth){
+					margin-bottom: 15px;
+				}
+				@media screen and (max-width: $smTabletWidth){
+					margin-bottom: 26px;
+				}
+			}
+
 		}
 
 		// .enne__info-title
@@ -54,7 +64,6 @@
             font-family: $secondaryTextFont;
             font-style: normal;
             font-weight: 700;
-            line-height: 36px;
             color: $fontColorPrimaryInv;
 			@media screen and (max-width: $phoneWidth){
 				line-height: 20px;

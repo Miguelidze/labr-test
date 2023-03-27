@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="est">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,11 @@
     <link rel="icon" href="../assets/img/icons/logo.png" type="image/png">
     <title>Labrador</title>
 </head>
+
 <body>
     <div class="preloader">
         <div class="preloader__row">
-            <div class="preloader__item">
-            </div>
+            <div class="preloader__item"></div>
             <div class="preloader__item preloader__item--rotate"></div>
             <div class="preloader__icon">
                 <img src="../assets/img/icons/logo.png" alt="logo">
@@ -23,16 +24,189 @@
             </div>
         </div>
     </div>
-    
+
     <div id="info" data-current-page-id="home-a"></div>
     <%- include('./incl/header.html')%>
-    <%- include('./incl/main.html')%>
-    <%- include('./incl/about.html')%>
-    <%- include('./incl/puppies.html')%>
-    <%- include('./incl/gallery.html')%>
-    <%- include('./incl/news.html')%>
-    <%- include('./incl/movie.html')%>
-    <%- include('./incl/partners.html')%>
-    <%- include('./incl/footer.html')%>
+        <div class="mobile-info">
+            <h3 class="mobile-info__pretitle">
+                WELCOME TO Estonian Labrador Retriever Club
+            </h3>
+        </div>
+        <div class="main-slider">
+            <div class="main-slider__slide">
+                <div class="main-slider__image">
+                    <img src="../assets/img/main-bcg.jpg" alt="foto">
+                </div>
+            </div>
+            <div class="main-slider__slide">
+                <div class="main-slider__image">
+                    <img src="../assets/img/main-bcg1.jpg" alt="foto">
+                </div>
+            </div>
+            <div class="main-slider__slide">
+                <div class="main-slider__image">
+                    <img src="../assets/img/main-bcg2.jpg" alt="foto">
+                </div>
+            </div>
+        </div>
+        <section class="container-main__wrap">
+            <div class="container-main">
+                <section class="main-info__wrap">
+                    <div class="bcg-main__wrap">
+                        <img class="bcg-main" src="../assets/img/bcg-main.jpg" alt="bcg-main">
+                    </div>
+                    <div class="info">
+                        <div class="info__pretitle">
+                            <h3 class="info__pretitle-text">
+                                WELCOME TO Estonian Labrador Retriever Club
+                            </h3>
+                        </div>
+                        <div class="info__title">
+                            <h1 class="info__title-text">
+                                The journey called Life<br>
+                                is much more fun when<br> accompanied by a Labrador
+                            </h1>
+                            <h1 class="info__title-text--tb">
+                                The journey called Life
+                                is much more fun when accompanied by a Labrador
+                            </h1>
+                        </div>
+                        <div class="info__btns">
+                            <a href="../kutsikad.html" class="info__btns-btn info__btns-btn--white">leia kutsikad</a>
+                            <button id="" class="info__btns-btn info__btns-btn--red">liitu meiega</button>
+                        </div>
+                    </div>
+                </section>
+                <!--Main navigation section-->
+                <div class="main-nav__wrap main-nav__wrap--main">
+                    <div class="nav">
+                        <div class="nav__item nav__item--br">
+                            <div class="nav__links">
+                                <div class="links__title">
+                                    <a id="uhing" href="../uhing.html" class="title__text">Ühing</a>
+                                </div>
+                                <div class="links__link">
+                                    <a id="connect" href="../connect.html#info" class="link__text">Liikmeks astumine</a>
+                                </div>
+                                <div class="links__link">
+                                    <a id="rules" href="../rules.html" class="link__text">Põhikiri</a>
+                                </div>
+                                <div class="links__link">
+                                    <a id="documents" href="../documents.html" class="link__text">Dokumendid</a>
+                                </div>
+                            </div>
+                            <div class="nav__more">
+                                <a href="../uhing.html" class="more__link">
+                                    <img src="../assets/img/icons/main-arrow.png" alt="arrow" class="more__picture">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav__item nav__item--rd">
+                            <div class="nav__links">
+                                <div class="links__title">
+                                    <a id="labrador" href="../toust.html" class="title__text">labrador</a>
+                                </div>
+                                <div class="links__link">
+                                    <a id="toust" href="../toust.html" class="link__text">Tõust</a>
+                                </div>
+                                <div class="links__link">
+                                    <a id="toustandard" href="../toustandard.html" class="link__text">Tõustandard</a>
+                                </div>
+                                <div class="links__link">
+                                    <a id="tervis" href="../tervis.html" class="link__text">Tervis</a>
+                                </div>
+                            </div>
+                            <div class="nav__more">
+                                <a href="" class="more__link">
+                                    <img src="../assets/img/icons/main-arrow.png" alt="" class="more__picture">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav__item nav__item--bl">
+                            <div class="nav__links">
+                                <div class="links__title">
+                                    <a id="uritused" href="../uritused.html" class="title__text">Üritused</a>
+                                </div>
+                                <div class="links__link">
+                                    <a id="naitused" href="../naitused.html" class="link__text">Näitused</a>
+                                </div>
+                                <div class="links__link">
+                                    <a id="koolitused" href="../koolitused.html" class="link__text">Koolitused</a>
+                                </div>
+                                <div class="links__link">
+                                    <a id="toukatse" href="../toukatse.html" class="link__text">Tõukatse</a>
+                                </div>
+                            </div>
+                            <div class="nav__more">
+                                <a href="../uritused.html" class="more__link">
+                                    <img src="../assets/img/icons/main-arrow.png" alt="" class="more__picture">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="accordion-menu">
+                        <div>
+                            <div class="accordion-item accordion-item--br dropdownlink" aria-hidden="true">
+                                <div class="accordion-header">
+                                    <a id="uhing-a" href="../uhing.html">
+                                        Ühing
+                                    </a>
+                                </div>
+                                <img class="accordion-arrow" src="../assets/img/icons/arrow-down.png" alt="arrow">
+                            </div>
+                            <ul class="submenuItems submenuItems--br">
+                                <li><a id="connect-a" class="submenuItems__link" href="../connect.html">Liikmeks
+                                        astumine</a></li>
+                                <li><a id="rules-a" class="submenuItems__link" href="../rules.html">Põhikiri</a></li>
+                                <li><a id="documents-a" class="submenuItems__link"
+                                        href="../documents.html">Dokumendid</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="accordion-item accordion-item--rd dropdownlink" aria-hidden="true">
+                                <div class="accordion-header">
+                                    <a href="../toust">
+                                        labrador
+                                    </a>
+                                </div>
+                                <img class="accordion-arrow" src="../assets/img/icons/arrow-down.png" alt="arrow">
+                            </div>
+                            <ul class="submenuItems submenuItems--rd">
+                                <li><a id="toust-a" class="submenuItems__link" href="../toust.html">Tõust</a></li>
+                                <li><a id="toustandard-a" class="submenuItems__link"
+                                        href="../toustandard.html">Tõustandard</a></li>
+                                <li><a id="tervis-a" class="submenuItems__link" href="../tervis.html">Tervis</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="accordion-item accordion-item--bl dropdownlink" aria-hidden="true">
+                                <div class="accordion-header">
+                                    <a id="uritused-a" href="../uritused.html">
+                                        Üritused
+                                    </a>
+                                </div>
+                                <img class="accordion-arrow" src="../assets/img/icons/arrow-down.png" alt="arrow">
+                            </div>
+                            <ul class="submenuItems submenuItems--bl">
+                                <li><a id="naitused-a" class="submenuItems__link" href="../naitused.html">Näitused</a>
+                                </li>
+                                <li><a id="koolitused-a" class="submenuItems__link"
+                                        href="../koolitused.html">Koolitused</a></li>
+                                <li><a id="toukatse-a" class="submenuItems__link" href="../toukatse.html">Tõukatse</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <%- include('./incl/about.html')%>
+            <%- include('./incl/puppies.html')%>
+                <%- include('./incl/gallery.html')%>
+                    <%- include('./incl/news.html')%>
+                        <%- include('./incl/movie.html')%>
+                            <%- include('./incl/partners.html')%>
+                                <%- include('./incl/footer.html')%>
 </body>
+
 </html>

@@ -1335,9 +1335,9 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
 
 // Preloader
 
-window.onload = function () {
-  document.body.classList.add("loaded");
-};
+//  window.onload = function () {
+//    document.body.classList.add("loaded");
+//  };
 
 /***/ }),
 

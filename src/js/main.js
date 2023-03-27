@@ -16,12 +16,12 @@ $(".main-slider").on("click", function () {
 // active page
 
 $(document).ready(function () {
-  let current_menu_id = $('#info').data('current-id');
-  let main_menu_id = $('#info').data('main-menu-current-id');
-  let current__page = $('#info').data('current-page-id');
-  $('#' + current_menu_id).addClass('current-bread');
+  let current_menu_id = $("#info").data("current-id");
+  let main_menu_id = $("#info").data("main-menu-current-id");
+  let current__page = $("#info").data("current-page-id");
+  $("#" + current_menu_id).addClass("current-bread");
   $("#" + main_menu_id).addClass("current-bread");
-  $('#' + current__page).addClass("active")
+  $("#" + current__page).addClass("active");
 });
 
 $(".navigation__item").on("click", function () {
@@ -99,25 +99,24 @@ $(window).resize(function () {
 
 // language change
 
-$('.lang').on('click', function(e){
-	$('.lang__list').addClass('active');
-	e.stopPropagation();
-	// $('#'+$(this).data('lang-id')).
+$(".lang").on("click", function (e) {
+  $(".lang__list").addClass("active");
+  e.stopPropagation();
+  // $('#'+$(this).data('lang-id')).
 });
-$('.lang__item').on('click', function() {
+$(".lang__item").on("click", function () {
+  $(".lang__item").removeClass("selected");
+  $(this).addClass("selected");
 
-	$('.lang__item').removeClass('selected');
-	$(this).addClass('selected');
-
-	$('.lang').removeClass('active');
-	$('#'+$(this).data('lang-id')).addClass('active');
-});
-
-$(document).on('click', function(){
-	$('.lang__list').removeClass('active');
+  $(".lang").removeClass("active");
+  $("#" + $(this).data("lang-id")).addClass("active");
 });
 
-// Accordion 
+$(document).on("click", function () {
+  $(".lang__list").removeClass("active");
+});
+
+// Accordion
 
 $(function () {
   var Accordion = function (el, multiple) {
@@ -168,32 +167,30 @@ $(function () {
 ///MODAL
 
 const myModal = new HystModal({
-    linkAttributeName: "data-hystmodal",
+  linkAttributeName: "data-hystmodal",
 });
 
 //Modal
-$(document).on('click', '.modal-trigger', function(event) {
-	$("body").css("overflow", "hidden");
+$(document).on("click", ".modal-trigger", function (event) {
+  $("body").css("overflow", "hidden");
 
-	var modalID = $(this).data('modal-id');
-	var modal = $("#" + modalID + ".modal");
-	modal.addClass("modal-active");
+  var modalID = $(this).data("modal-id");
+  var modal = $("#" + modalID + ".modal");
+  modal.addClass("modal-active");
 
-	var modalTitle = $(this).data('modal-title');
-	if(typeof modalTitle !== 'undefined'){
-		modal.find(".modal-title").html(modalTitle);
-	}
+  var modalTitle = $(this).data("modal-title");
+  if (typeof modalTitle !== "undefined") {
+    modal.find(".modal-title").html(modalTitle);
+  }
 });
-$(document).on('click', '.modal-bg, .modal-cross', function(event) {
-	$("body").css("overflow", "visible");
-	var modal = $(this).closest(".modal");
-	modal.removeClass("modal-active");
-
+$(document).on("click", ".modal-bg, .modal-cross", function (event) {
+  $("body").css("overflow", "visible");
+  var modal = $(this).closest(".modal");
+  modal.removeClass("modal-active");
 });
-$(document).on('click', '.modal-window', function(event) {
-	event.stopPropagation();
+$(document).on("click", ".modal-window", function (event) {
+  event.stopPropagation();
 });
-
 
 // tabs uudised
 
@@ -223,40 +220,36 @@ $("#old").click(function (e) {
 // Show more y less news
 
 //READMORE START
-$(document).on('click', '.readmore', function (event) {
+$(document).on("click", ".readmore", function (event) {
   event.preventDefault();
-	$(this).toggleClass("toggled");
-	ToggleReadmoreObjects($(this));
+  $(this).toggleClass("toggled");
+  ToggleReadmoreObjects($(this));
 });
-function ToggleReadmoreObjects(readmore){
-	let readmoreObjects = $("[data-readmore-identifier="+readmore.attr('id')+"]");
-	if(readmoreObjects.length == 0){
-		return;
-	}
-	for (var i = 0; i < readmoreObjects.length; i++) {
-		let readmoreObject = $(readmoreObjects[i]);
-		if(readmore.hasClass("toggled")){
-
-			readmoreObject.removeClass("hidden");
-		}
-		else{
-			readmoreObject.addClass("hidden");
-		}
-		
-	}
+function ToggleReadmoreObjects(readmore) {
+  let readmoreObjects = $(
+    "[data-readmore-identifier=" + readmore.attr("id") + "]"
+  );
+  if (readmoreObjects.length == 0) {
+    return;
+  }
+  for (var i = 0; i < readmoreObjects.length; i++) {
+    let readmoreObject = $(readmoreObjects[i]);
+    if (readmore.hasClass("toggled")) {
+      readmoreObject.removeClass("hidden");
+    } else {
+      readmoreObject.addClass("hidden");
+    }
+  }
 }
 //First run through for every readmore when page loads
-$(document).ready(function(){
-	$('.readmore').each(function(){
-	ToggleReadmoreObjects($(this));
-	});
+$(document).ready(function () {
+  $(".readmore").each(function () {
+    ToggleReadmoreObjects($(this));
+  });
 });
 
 // Preloader
 
- window.onload = function () {
-   document.body.classList.add("loaded");
- };
-
-
- 
+window.onload = function () {
+  document.body.classList.add("loaded");
+};

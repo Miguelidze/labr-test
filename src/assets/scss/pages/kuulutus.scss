@@ -1,97 +1,214 @@
+.container-kuulutus {
+  @media screen and (min-width: $largeWidth) {
+    width: $desktopWidth;
+    margin: auto;
+  }
+  @media screen and (max-width: $largeWidth) {
+    margin: 0 80px;
+  }
+
+  @media screen and (max-width: $smDesktopWidth) {
+    width: 100%;
+    margin: 0 20px;
+  }
+
+  @media screen and (max-width: $tabletWidth) {
+    width: 100%;
+    margin: 0 40px;
+  }
+
+  @media screen and (max-width: $smTabletWidth) {
+    width: 100%;
+    margin: 20px;
+  }
+}
 .kuulutus {
+  // .kuulutus__wrap
 
-		// .kuulutus__wrap
+  &__wrap {
+    margin: 120px 90px;
+  }
 
-		&__wrap {
-            margin: 120px 90px;
-		}
+  // .kuulutus__item-wrap
 
-		// .kuulutus__item-wrap
+  &__item-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px 60px;
+    background: $bacground-pages;
+    border-radius: 10px;
+  }
 
-		&__item-wrap {
-		}
+  // .kuulutus__title
 
-		// .kuulutus__title
+  &__title {
+    align-self: center;
+    margin-bottom: 40px;
+  }
 
-		&__title {
-		}
+  // .kuulutus__title-text
 
-		// .kuulutus__title-text
+  &__title-text {
+    font-family: $secondaryTextFont;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: $fontColorPrimary;
+  }
 
-		&__title-text {
-		}
+  // .kuulutus__pretitle
 
-		// .kuulutus__pretitle
+  &__pretitle {
+    margin-bottom: 40px;
+  }
 
-		&__pretitle {
-		}
+  // .kuulutus__pretitle-text
 
-		// .kuulutus__pretitle-text
-
-		&__pretitle-text {
-		}
+  &__pretitle-text {
+    font-family: $secondaryTextFont;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    color: $fontColorPrimary;
+  }
 }
 .kuultus {
+  // .kuultus__item
 
-		// .kuultus__item
+  &__item {
+  }
 
-		&__item {
-		}
+  // .kuultus__item-person
 
-		// .kuultus__item-person
+  &__item-person {
+    display: flex;
+    flex-direction: column;
+  }
 
-		&__item-person {
-		}
+  // .kuultus__item-person-wrap
 
-		// .kuultus__item-person-wrap
+  &__item-person-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
 
-		&__item-person-wrap {
-		}
+  // .kuultus__person-foto
 
-		// .kuultus__person-foto
+  &__person-foto {
+    flex: 0 0 25%;
+    margin-right: 50px;
+  }
 
-		&__person-foto {
-		}
+  // .kuultus__img
+  &__img {
+    background-image: url(../img/icons/addimage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-color: transparent;
+    border: dashed 2px $fontColorDefault;
+    border-radius: 30px;
+    aspect-ratio: 0.7;
+    &::-webkit-file-upload-button {
+      display: none;
+    }
+    & > span {
+      display: none;
+    }
+  }
 
-		// .kuultus__img
+  // .kuultus__person-info
 
-		&__img {
-		}
-
-		// .kuultus__person-info
-
-		&__person-info {
-		}
+  &__person-info {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .person-info {
+  // .person-info__pretitle
 
-		// .person-info__pretitle
+  &__pretitle {
+    margin-bottom: 25px;
+  }
 
-		&__pretitle {
-		}
+  // .person-info__text
 
-		// .person-info__text
+  &__text {
+    font-family: $secondaryTextFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $fontColorPrimary;
+  }
 
-		&__text {
-		}
+  // .person-info__title
 
-		// .person-info__title
+  &__title {
+    margin-bottom: 55px;
+  }
 
-		&__title {
-		}
+  // .person-info__title-text
 
-		// .person-info__title-text
+  &__title-text {
+    font-family: $secondaryTextFont;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: $fontColorPrimary;
+  }
 
-		&__title-text {
-		}
+  // .person-info__block
 
-		// .person-info__block
+  &__block-wrap {
+    display: flex;
+  }
 
-		&__block {
-		}
+  &__block {
+    width: 100%;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
 
-		// .person-info__item
+  // .person-info__item
 
-		&__item {
-		}
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+}
+.kuulutus-label {
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  padding: 0 5px;
+  width: fit-content;
+  background-color: $active-color;
+  font-family: $secondFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $fontColorPrimary;
+}
+.kuulutus-input {
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  color: $fontColorDefault;
+  border: 1px solid $fontColorDefault;
+  border-radius: 4px;
+  &:focus-visible {
+    outline-color: $active-color;
+  }
+  &--comment {
+    min-height: 200px;
+  }
 }
