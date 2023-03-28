@@ -17,17 +17,17 @@
       width: 120px;
       height: 120px;
       @media screen and (max-width: $smTabletWidth) {
-        width: 80px;
-        height: 80px;
+        width: 93px;
+        height: 93px;
       }
     }
     @media screen and (max-width: $tabletWidth) {
       flex: none;
     }
     @media screen and (max-width: $smTabletWidth) {
-        width: 80px;
-        height: 80px;
-      }
+      width: 93px;
+      height: 93px;
+    }
   }
   &__logo-link {
     position: absolute;
@@ -36,9 +36,9 @@
     width: 120px;
     height: 120px;
     @media screen and (max-width: $smTabletWidth) {
-        width: 80px;
-        height: 80px;
-      }
+      width: 93px;
+      height: 93px;
+    }
   }
 
   // .header__navigation
@@ -161,7 +161,7 @@
         margin-right: 15px;
       }
     }
-     @media screen and (max-width: $tabletWidth) {
+    @media screen and (max-width: $tabletWidth) {
       margin-right: 0;
     }
   }
@@ -196,7 +196,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-     @media screen and (max-width: $tabletWidth) {
+    @media screen and (max-width: $tabletWidth) {
       padding: 0;
     }
   }
@@ -211,7 +211,6 @@
     visibility: hidden;
     transition: all 0.3s linear;
     &.active {
-      
       visibility: visible;
     }
     justify-content: center;

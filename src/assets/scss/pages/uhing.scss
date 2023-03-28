@@ -161,14 +161,14 @@
     font-family: $secondaryTextFont;
     font-style: normal;
     font-weight: 900;
-    font-size: 45px;
     line-height: 68px;
     letter-spacing: 0.07em;
     text-transform: uppercase;
     color: $fontColorPrimary;
     margin-bottom: 30px;
     @media screen and (max-width: $smTabletWidth) {
-      display: none;
+      text-transform: capitalize;
+      line-height: 48px;
     }
   }
 

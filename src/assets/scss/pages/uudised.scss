@@ -322,7 +322,7 @@
     color: $fontColorPrimary;
     margin-bottom: 13px;
     @media screen and (max-width: $smTabletWidth) {
-      text-align: center;
+      text-align: start;
       font-weight: 700;
       line-height: 42px;
       text-transform: none;

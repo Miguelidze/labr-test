@@ -191,20 +191,34 @@
   // .info__btns
 
   &__btns {
+    display: flex;
     @media screen and (max-width: $smTabletWidth) {
       display: flex;
       justify-content: center;
       margin-bottom: 60px;
     }
+    @media screen and (max-width: $phoneWidth) {
+    }
   }
-
+  &__btns-link {
+    padding: 20px 15px;
+    @media screen and (max-width: $phoneWidth) {
+      padding: 15px 0;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      padding: 7px 0;
+    }
+  }
   // .info__btns-btn
 
   &__btns-btn {
     cursor: pointer;
-    padding: 20px 15px;
+    position: relative;
+    padding: 20px 0px;
     border-radius: 8px;
     min-width: 200px;
+    width: fit-content;
+    border: none;
     font-family: $secondFont;
     font-style: normal;
     font-weight: 700;
@@ -217,9 +231,9 @@
     &:hover {
       transform: skew(-10deg);
     }
-    &:focus {
-      transform: skew(-10deg);
-    }
+    // &:focus {
+    //   transform: skew(-10deg);
+    // }
     &:not(:last-child) {
       margin-right: 30px;
       @media screen and (max-width: $phoneWidth) {
@@ -230,6 +244,7 @@
       font-size: 16px;
     }
     @media screen and (max-width: $phoneWidth) {
+      min-width: 0;
       font-size: 14px;
       padding: 15px;
     }
@@ -241,7 +256,9 @@
     &--red {
       background: $active-color;
       color: $fontColorPrimary;
-
+      &:hover {
+        transform: skew(-10deg);
+      }
       &:active {
         background: $fontColorPrimary;
         color: $fontColorPrimaryInv;

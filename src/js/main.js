@@ -122,7 +122,7 @@ $(function () {
   var Accordion = function (el, multiple) {
     this.el = el || {};
     // more then one submenu open?
-    this.multiple = multiple || false;
+    this.multiple = multiple || true;
 
     var dropdownlink = this.el.find(
       ".dropdownlink, .rules__dropdownlink, .kuts__dropdownlink, .parents__dropdownlink"
@@ -198,23 +198,16 @@ $("#new").click(function (e) {
   e.preventDefault();
   $("#new").addClass("current-link");
   $("#old").removeClass("current-link");
-  // $("#up").removeClass("current-link");
-  // $("#custom").removeClass("current-link");
   $("#new-item").addClass("active");
   $("#old-item").removeClass("active");
-  // $("#up-item").removeClass("active");
-  // $("#custom-item").removeClass("active");
 });
 $("#old").click(function (e) {
   e.preventDefault();
   $("#old").addClass("current-link");
   $("#new").removeClass("current-link");
-  // $("#up").removeClass("current-link");
-  // $("#custom").removeClass("current-link");
+
   $("#old-item").addClass("active");
   $("#new-item").removeClass("active");
-  // $("#up-item").removeClass("active");
-  // $("#custom-item").removeClass("active");
 });
 
 // Show more y less news
