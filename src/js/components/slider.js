@@ -7,8 +7,8 @@ $(document).ready(function () {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed:5000,
+    autoplay: true,
+    autoplaySpeed: 5000,
   });
   $(".gallery-slider").slick({
     dots: false,
@@ -50,8 +50,8 @@ $(document).ready(function () {
   $(".uudised-slider").slick({
     dots: true,
     arrows: true,
-    gap:20,
-    rows:3,
+    gap: 20,
+    rows: 3,
     appendArrows: $(".uudised-arrows"),
     appendDots: $(".uudised-dots"),
     speed: 1000,
