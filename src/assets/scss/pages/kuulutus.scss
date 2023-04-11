@@ -8,17 +8,14 @@
   }
 
   @media screen and (max-width: $smDesktopWidth) {
-    width: 100%;
     margin: 0 20px;
   }
 
   @media screen and (max-width: $tabletWidth) {
-    width: 100%;
     margin: 0 40px;
   }
 
   @media screen and (max-width: $smTabletWidth) {
-    width: 100%;
     margin: 20px;
   }
 }
@@ -27,6 +24,12 @@
 
   &__wrap {
     margin: 120px 90px;
+    @media screen and (max-width: $smDesktopWidth) {
+      margin: 80px 50px;
+    }
+    @media screen and (max-width: $tabletWidth) {
+      margin: 80px 0px;
+    }
   }
 
   // .kuulutus__item-wrap
@@ -34,9 +37,20 @@
   &__item-wrap {
     display: flex;
     flex-direction: column;
+    position: relative;
     padding: 40px 60px 60px;
     background: $bacground-pages;
     border-radius: 10px;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: $tabletWidth) {
+      padding: 40px 30px 60px;
+    }
+
+    @media screen and (max-width: $smTabletWidth) {
+      padding: 32px 15px 45px;
+    }
   }
 
   // .kuulutus__title
@@ -55,12 +69,18 @@
     line-height: 60px;
     text-transform: uppercase;
     color: $fontColorPrimary;
+    @media screen and (max-width: $smTabletWidth) {
+      text-transform: inherit;
+    }
   }
 
   // .kuulutus__pretitle
 
   &__pretitle {
     margin-bottom: 40px;
+    @media screen and (max-width: $smTabletWidth) {
+      margin-bottom: 32px;
+    }
   }
 
   // .kuulutus__pretitle-text
@@ -71,12 +91,18 @@
     font-weight: 700;
     line-height: 48px;
     color: $fontColorPrimary;
+    @media screen and (max-width: $phoneWidth) {
+      font-size: 16px;
+    }
   }
 }
 .kuultus {
   // .kuultus__item
 
   &__item {
+    &--mb75 {
+      margin-bottom: 75px;
+    }
   }
 
   // .kuultus__item-person
@@ -93,38 +119,82 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 50px;
+    @media screen and (max-width: $smTabletWidth) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   // .kuultus__person-foto
 
   &__person-foto {
-    flex: 0 0 25%;
+    position: relative;
     margin-right: 50px;
+    width: 40%;
+    @media screen and (max-width: $desktopWidth) {
+      width: 45%;
+    }
+    @media screen and (max-width: $smDesktopWidth) {
+      margin-right: 30px;
+      width: 52%;
+    }
+    @media screen and (max-width: $tabletWidth) {
+      width: 62%;
+    }
+    @media screen and (max-width: $smTabletWidth) {
+      width: 50%;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      width: 100%;
+    }
+    &--parents {
+      width: 48%;
+      @media screen and (max-width: $smDesktopWidth) {
+        margin-right: 30px;
+        width: 55%;
+      }
+      @media screen and (max-width: $tabletWidth) {
+        width: 65%;
+      }
+      @media screen and (max-width: $smTabletWidth) {
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+    }
   }
 
   // .kuultus__img
   &__img {
-    background-image: url(../img/icons/addimage.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-color: transparent;
-    border: dashed 2px $fontColorDefault;
-    border-radius: 30px;
-    aspect-ratio: 0.7;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    & span {
+      display: none;
+    }
     &::-webkit-file-upload-button {
       display: none;
     }
-    & > span {
-      display: none;
+  }
+  &__form {
+    height: 100%;
+    @media screen and (max-width: $smTabletWidth) {
+      aspect-ratio: 3/4;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      aspect-ratio: 9/11;
     }
   }
-
   // .kuultus__person-info
 
   &__person-info {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }
 .person-info {
@@ -132,6 +202,15 @@
 
   &__pretitle {
     margin-bottom: 25px;
+    @media screen and (max-width: $smTabletWidth) {
+      display: none;
+    }
+    &--mob {
+      display: none;
+      @media screen and (max-width: $smTabletWidth) {
+        display: flex;
+      }
+    }
   }
 
   // .person-info__text
@@ -149,6 +228,16 @@
 
   &__title {
     margin-bottom: 55px;
+    @media screen and (max-width: $smTabletWidth) {
+      display: none;
+    }
+    &--mob {
+      display: none;
+      @media screen and (max-width: $smTabletWidth) {
+        display: flex;
+        margin-bottom: 32px;
+      }
+    }
   }
 
   // .person-info__title-text
@@ -160,18 +249,29 @@
     line-height: 60px;
     text-transform: uppercase;
     color: $fontColorPrimary;
+    @media screen and (max-width: $smTabletWidth) {
+      text-transform: inherit;
+      line-height: normal;
+    }
   }
 
   // .person-info__block
 
   &__block-wrap {
     display: flex;
+    @media screen and (max-width: $phoneWidth) {
+      flex-direction: column;
+    }
   }
 
   &__block {
     width: 100%;
     &:not(:last-child) {
       margin-right: 20px;
+      @media screen and (max-width: $phoneWidth) {
+        margin-right: 0;
+        margin-bottom: 32px;
+      }
     }
   }
 
@@ -181,7 +281,35 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 32px;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  // .person-info__wrap
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 32px 70px;
+    border: 1px solid $fontColorDefault;
+    border-radius: 4px;
+    row-gap: 25px;
+    column-gap: 50px;
+    @media screen and (max-width: $desktopWidth) {
+      column-gap: 20px;
+    }
+    @media screen and (max-width: $tabletWidth) {
+      padding: 30px;
+      column-gap: 30px;
+    }
+    @media screen and (max-width: $smTabletWidth) {
+      padding: 25px;
+      column-gap: 30px;
+    }
   }
 }
 .kuulutus-label {
@@ -197,6 +325,21 @@
   font-size: 12px;
   line-height: 16px;
   color: $fontColorPrimary;
+  &__add {
+    display: flex;
+    cursor: pointer;
+    padding: 0 30px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: dashed 2px $fontColorDefault;
+    border-radius: 30px;
+    &--samm2 {
+      padding: 10px;
+      aspect-ratio: 1/1;
+    }
+  }
 }
 .kuulutus-input {
   width: 100%;
@@ -210,5 +353,222 @@
   }
   &--comment {
     min-height: 200px;
+    @media screen and (max-width: $phoneWidth) {
+      min-height: 110px;
+    }
+  }
+  &--comment2 {
+    min-height: 75px;
+    @media screen and (max-width: $phoneWidth) {
+      min-height: auto;
+    }
+  }
+}
+.add {
+  // .add__file-icon-wrapper
+
+  &__file-icon-wrapper {
+    display: flex;
+    aspect-ratio: 1/1;
+  }
+
+  // .add__file-icon
+
+  &__file-icon {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    &--samm2 {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // .add__file-text
+
+  &__file-text {
+    font-family: $secondaryTextFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: $fontColorDefault;
+  }
+}
+.form-add-samm2 {
+  width: 15%;
+  aspect-ratio: 1/1;
+  position: relative;
+  @media screen and (max-width: $tabletWidth) {
+    width: 16%;
+  }
+  @media screen and (max-width: $smTabletWidth) {
+    width: 26%;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    width: 40%;
+  }
+}
+
+.maksma {
+  // .maksma__wrap
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .maksma__title
+
+  &__title {
+    display: flex;
+    margin-bottom: 10px;
+    @media screen and (max-width: $phoneWidth) {
+      flex-direction: column;
+    }
+  }
+
+  // .maksma__title-text
+
+  &__title-text {
+    font-family: $primaryTextFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $fontColorPrimary;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+  // .maksma__text
+
+  &__text {
+    width: 75%;
+    margin-bottom: 45px;
+    @media screen and (max-width: $tabletWidth) {
+      width: 91%;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      width: 100%;
+    }
+  }
+  // .maksma__text-text
+
+  &__text-text {
+    font-family: $primaryTextFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $fontColorPrimary;
+    @media screen and (max-width: $phoneWidth) {
+      text-align: initial;
+    }
+  }
+
+  // .maksma__summa
+
+  &__summa {
+    margin-bottom: 40px;
+  }
+
+  // .maksma__summa-text
+
+  &__summa-text {
+    font-family: $primaryTextFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: $fontColorPrimary;
+  }
+
+  // .maksma__logo
+
+  &__logo {
+    margin-bottom: 45px;
+  }
+
+  // .maksma__btn-wrap
+
+  &__btn-wrap {
+    width: 42%;
+    @media screen and (max-width: $tabletWidth) {
+      width: 50%;
+    }
+    @media screen and (max-width: $smTabletWidth) {
+      width: 65%;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      width: 100%;
+    }
+  }
+
+  // .maksma__btn
+
+  &__btn {
+    width: 100%;
+    padding: 15px 0;
+    background: $fontColorPrimary;
+    border-radius: 10px;
+    margin-bottom: 16px;
+
+    font-family: $primaryTextFont;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $active-color;
+  }
+
+  // .maksma__politik
+
+  &__politik {
+  }
+
+  // .maksma__politik-text
+
+  &__politik-text {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: $fontColorPrimary;
+  }
+
+  // .maksma__politik-link
+
+  &__politik-link {
+  }
+
+  // .maksma__foto
+
+  &__foto {
+    display: block;
+    position: absolute;
+    right: -8%;
+    bottom: -35px;
+    @media screen and (max-width: $smDesktopWidth) {
+      right: -6%;
+    }
+    @media screen and (max-width: $tabletWidth) {
+      display: none;
+    }
+  }
+
+  // .maksma__img
+
+  &__img {
   }
 }

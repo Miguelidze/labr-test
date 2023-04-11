@@ -246,3 +246,24 @@ $(document).ready(function () {
 window.onload = function () {
   document.body.classList.add("loaded");
 };
+
+// Preview loader
+
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    for (i = 0; i < input.files.length; i++) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        var oImg = document.createElement("img");
+        oImg.setAttribute("src", e.target.result);
+        document.getElementById("wrapper-img-form").appendChild(oImg);
+      };
+      reader.readAsDataURL(input.files[i]);
+      console.log(input.files[i]);
+    }
+  }
+}
+
+$("#imgInp").change(function () {
+  readURL(this);
+});

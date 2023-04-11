@@ -7,18 +7,34 @@
                         Uus kuulutus
                     </h2>
                 </div>
+                <div class="person-info__pretitle person-info__pretitle--mob">
+                    <p class="person-info__text">
+                        Kuulutuse lisamiseks sisestage kõik vajalikud andmed.
+                    </p>
+                </div>
                 <div class="kuulutus__pretitle">
                     <h3 class="kuulutus__pretitle-text text--L">
                         Samm 1 - Põhiandmed
                     </h3>
                 </div>
+                <div class="person-info__title person-info__title--mob">
+                    <h2 class="person-info__title-text text--XL">
+                        Kenneli nimi
+                    </h2>
+                </div>
                 <div class="kuultus__item">
                     <div class="kuultus__item-person">
                         <div class="kuultus__item-person-wrap">
                             <div class="kuultus__person-foto">
-                                <form action="addimage" method="post">
-                                    <input class="kuultus__img" type="file" multiple accept="image/*"
-                                        aria-placeholder="Lisage põhifoto">
+                                <form class="kuultus__form" action="addimage" method="post">
+                                    <input class="kuultus__img" type="file" id="addfile" multiple accept="image/*">
+                                    <label class="kuulutus-label__add" for="addfile">
+                                        <span class="add__file-icon-wrapper">
+                                            <img src="../assets/img/icons/addimage.png" class="add__file-icon"
+                                                alt="Lisage põhifoto">
+                                        </span>
+                                        <span class="add__file-text">Lisage põhifoto</span>
+                                    </label>
                                 </form>
                             </div>
                             <div class="kuultus__person-info">
@@ -45,7 +61,7 @@
                                                 placeholder="Sisestage kuupäeva">
                                         </form>
                                         <form class="person-info__item" action="" method="get">
-                                            <label class="kuulutus-label" for="time">Sisestage tekst</label>
+                                            <label class="kuulutus-label" for="time">Pesakonna loovutusaeg</label>
                                             <input class="kuulutus-input" type="text" name="time" id="time"
                                                 placeholder="Sisestage tekst">
                                         </form>
@@ -81,7 +97,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="person-info__item">
+                        <div>
                             <form class="person-info__item" action="" method="get">
                                 <label class="kuulutus-label" for="comment">Lisainfo pesakonna ja/või kenneli
                                     kohta</label>
@@ -90,14 +106,272 @@
                             </form>
                         </div>
                     </div>
-                    <div class="kuulutus__item-person">
+                </div>
+            </div>
+            <div class="kuulutus__item-wrap">
+                <div class="kuulutus__pretitle">
+                    <h3 class="kuulutus__pretitle-text text--L">
+                        Samm 2 - Fotod
+                    </h3>
+                </div>
+                <div class="person-info__pretitle">
+                    <p class="person-info__text">
+                        Maksimaalne fotode arv: 10
+                    </p>
+                </div>
+                <div class="person-info__wrap">
+                    <form class="form-add-samm2" action="addimage" method="post">
+                        <input class="kuultus__img" type="file" id="addfile" multiple accept="image/*">
+                        <label class="kuulutus-label__add kuulutus-label__add--samm2 " for="addfile">
+                            <span class="add__file-icon-wrapper">
+                                <img src="../assets/img/icons/addimage.png" class="add__file-icon add__file-icon--samm2"
+                                    alt="Lisage põhifoto">
+                            </span>
+                        </label>
+                    </form>
+                    <form class="form-add-samm2" action="addimage" method="post">
+                        <input class="kuultus__img" type="file" id="addfile" multiple accept="image/*">
+                        <label class="kuulutus-label__add kuulutus-label__add--samm2 " for="addfile">
+                            <span class="add__file-icon-wrapper">
+                                <img src="../assets/img/icons/addimage.png" class="add__file-icon add__file-icon--samm2"
+                                    alt="Lisage põhifoto">
+                            </span>
+                        </label>
+                    </form>
+                    <form class="form-add-samm2" action="addimage" method="post">
+                        <input class="kuultus__img" type="file" id="addfile" multiple accept="image/*">
+                        <label class="kuulutus-label__add kuulutus-label__add--samm2 " for="addfile">
+                            <span class="add__file-icon-wrapper">
+                                <img src="../assets/img/icons/addimage.png" class="add__file-icon add__file-icon--samm2"
+                                    alt="Lisage põhifoto">
+                            </span>
+                        </label>
+                    </form>
+                    <form class="form-add-samm2" action="addimage" method="post">
+                        <input class="kuultus__img" type="file" id="addfile" multiple accept="image/*">
+                        <label class="kuulutus-label__add kuulutus-label__add--samm2 " for="addfile">
+                            <span class="add__file-icon-wrapper">
+                                <img src="../assets/img/icons/addimage.png" class="add__file-icon add__file-icon--samm2"
+                                    alt="Lisage põhifoto">
+                            </span>
+                        </label>
+                    </form>
+                    <form class="form-add-samm2" action="addimage" method="post">
+                        <input class="kuultus__img" type="file" id="addfile" multiple accept="image/*">
+                        <label class="kuulutus-label__add kuulutus-label__add--samm2 " for="addfile">
+                            <span class="add__file-icon-wrapper">
+                                <img src="../assets/img/icons/addimage.png" class="add__file-icon add__file-icon--samm2"
+                                    alt="Lisage põhifoto">
+                            </span>
+                        </label>
+                    </form>
+                    <form class="form-add-samm2" action="addimage" method="post">
+                        <input class="kuultus__img" type="file" id="addfile" multiple accept="image/*">
+                        <label class="kuulutus-label__add kuulutus-label__add--samm2 " for="addfile">
+                            <span class="add__file-icon-wrapper">
+                                <img src="../assets/img/icons/addimage.png" class="add__file-icon add__file-icon--samm2"
+                                    alt="Lisage põhifoto">
+                            </span>
+                        </label>
+                    </form>
+                    <form class="form-add-samm2" action="addimage" method="post">
+                        <input class="kuultus__img" type="file" id="addfile" multiple accept="image/*">
+                        <label class="kuulutus-label__add kuulutus-label__add--samm2 " for="addfile">
+                            <span class="add__file-icon-wrapper">
+                                <img src="../assets/img/icons/addimage.png" class="add__file-icon add__file-icon--samm2"
+                                    alt="Lisage põhifoto">
+                            </span>
+                        </label>
+                    </form>
+                    <form class="form-add-samm2" action="addimage" method="post">
+                        <input class="kuultus__img" type="file" id="addfile" multiple accept="image/*">
+                        <label class="kuulutus-label__add kuulutus-label__add--samm2 " for="addfile">
+                            <span class="add__file-icon-wrapper">
+                                <img src="../assets/img/icons/addimage.png" class="add__file-icon add__file-icon--samm2"
+                                    alt="Lisage põhifoto">
+                            </span>
+                        </label>
+                    </form>
+                    <form class="form-add-samm2" action="addimage" method="post">
+                        <input class="kuultus__img" type="file" id="addfile" multiple accept="image/*">
+                        <label class="kuulutus-label__add kuulutus-label__add--samm2 " for="addfile">
+                            <span class="add__file-icon-wrapper">
+                                <img src="../assets/img/icons/addimage.png" class="add__file-icon add__file-icon--samm2"
+                                    alt="Lisage põhifoto">
+                            </span>
+                        </label>
+                    </form>
+                    <form class="form-add-samm2" action="addimage" method="post">
+                        <input class="kuultus__img" type="file" id="addfile" multiple accept="image/*">
+                        <label class="kuulutus-label__add kuulutus-label__add--samm2 " for="addfile">
+                            <span class="add__file-icon-wrapper">
+                                <img src="../assets/img/icons/addimage.png" class="add__file-icon add__file-icon--samm2"
+                                    alt="Lisage põhifoto">
+                            </span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="kuulutus__item-wrap">
+                <div class="kuulutus__pretitle">
+                    <h3 class="kuulutus__pretitle-text text--L">
+                        Samm 3.1. - PESAKONNA ISA ANDMED
+                    </h3>
+                </div>
+                <div class="kuultus__item kuultus__item--mb75">
+                    <div class="kuultus__item-person">
+                        <div class="kuultus__item-person-wrap">
+                            <div class="kuultus__person-foto kuultus__person-foto--parents">
+                                <form class="kuultus__form" action="addimage" method="post">
+                                    <input class="kuultus__img" type="file" id="addfile" multiple accept="image/*">
+                                    <label class="kuulutus-label__add" for="addfile">
+                                        <span class="add__file-icon-wrapper">
+                                            <img src="../assets/img/icons/addimage.png" class="add__file-icon"
+                                                alt="Lisage põhifoto">
+                                        </span>
+                                        <span class="add__file-text">Lisage põhifoto</span>
+                                    </label>
+                                </form>
+                            </div>
+                            <div class="kuultus__person-info">
 
+                                <div class="person-info__block-wrap">
+                                    <div class="person-info__block">
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="name-papa">Nimi ja tiitlid</label>
+                                            <input class="kuulutus-input" type="text" name="name" id="name-papa"
+                                                placeholder="Sisestage tekst">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="parents">Vanemad</label>
+                                            <input class="kuulutus-input" type="text" name="name" id="parents"
+                                                placeholder="Sisestage tekst">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="diseases">Düsplaasia- ning silmauuringu
+                                                tulemused</label>
+                                            <input class="kuulutus-input" type="text" name="text" id="diseases"
+                                                placeholder="Sisestage tekst">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="genetic">Geenitestide tulemused</label>
+                                            <input class="kuulutus-input" type="text" name="text" id="genetic"
+                                                placeholder="Sisestage tekst">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="results">Katsete tulemused</label>
+                                            <input class="kuulutus-input" type="text" name="results" id="results"
+                                                placeholder="Sisestage tekst">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="comment">Foto veebiaadress</label>
+                                            <input class="kuulutus-input kuulutus-input--comment2" type="text"
+                                                name="comment" id="comment" placeholder="Sisestage link">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kuulutus__pretitle">
+                    <h3 class="kuulutus__pretitle-text text--L">
+                        Samm 3.2. - PESAKONNA EMA ANDMED
+                    </h3>
+                </div>
+                <div class="kuultus__item">
+                    <div class="kuultus__item-person">
+                        <div class="kuultus__item-person-wrap">
+                            <div class="kuultus__person-foto kuultus__person-foto--parents">
+                                <form class="kuultus__form" action="addimage" method="post">
+                                    <input class="kuultus__img" type="file" id="addfile" multiple accept="image/*">
+                                    <label class="kuulutus-label__add" for="addfile">
+                                        <span class="add__file-icon-wrapper">
+                                            <img src="../assets/img/icons/addimage.png" class="add__file-icon"
+                                                alt="Lisage põhifoto">
+                                        </span>
+                                        <span class="add__file-text">Lisage põhifoto</span>
+                                    </label>
+                                </form>
+                            </div>
+                            <div class="kuultus__person-info">
+
+                                <div class="person-info__block-wrap">
+                                    <div class="person-info__block">
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="name-papa">Nimi ja tiitlid</label>
+                                            <input class="kuulutus-input" type="text" name="name" id="name-papa"
+                                                placeholder="Sisestage tekst">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="parents">Vanemad</label>
+                                            <input class="kuulutus-input" type="text" name="name" id="parents"
+                                                placeholder="Sisestage tekst">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="diseases">Düsplaasia- ning silmauuringu
+                                                tulemused</label>
+                                            <input class="kuulutus-input" type="text" name="text" id="diseases"
+                                                placeholder="Sisestage tekst">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="genetic">Geenitestide tulemused</label>
+                                            <input class="kuulutus-input" type="text" name="text" id="genetic"
+                                                placeholder="Sisestage tekst">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="results">Katsete tulemused</label>
+                                            <input class="kuulutus-input" type="text" name="results" id="results"
+                                                placeholder="Sisestage tekst">
+                                        </form>
+                                        <form class="person-info__item" action="" method="get">
+                                            <label class="kuulutus-label" for="comment">Foto veebiaadress</label>
+                                            <input class="kuulutus-input kuulutus-input--comment2" type="text"
+                                                name="comment" id="comment" placeholder="Sisestage link">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="kuulutus__item-wrap"></div>
-            <div class="kuulutus__item-wrap"></div>
-            <div class="kuulutus__item-wrap"></div>
+            <div class="kuulutus__item-wrap">
+                <div class="kuulutus__pretitle">
+                    <h3 class="kuulutus__pretitle-text text--L">
+                        Samm 4 - Maksmine
+                    </h3>
+                </div>
+                <div class="maksma__wrap">
+                    <div class="maksma__title">
+                        <p class="maksma__title-text">ELRÜ sisseastumismaks on 10€</p>
+                        <p class="maksma__title-text">ja ELRÜ aastamaks 15€.</p>
+                    </div>
+                    <div class="maksma__text">
+                        <p class="maksma__text-text">Liikmemaksu tasumist arvestatakse kalendriaasta põhiselt. Olenemata
+                            liikmest astumise kuupäevast tuleb aastamaks tasuda
+                            kogu aasta eest. Iga aasta alguses tasutakse aastamaks täissummas.</p>
+                    </div>
+                    <div class="maksma__summa">
+                        <p class="maksma__summa-text">Makstav summa: 25,00 €</p>
+                    </div>
+                    <div class="maksma__logo">
+                        <img src="../assets/img/icons/makskeskus.png" alt="">
+                    </div>
+                    <div class="maksma__btn-wrap">
+                        <button class="maksma__btn">maksma</button>
+                        <div class="maksma__politik">
+                            <p class="maksma__politik-text">
+                                Klõpsates nuppu "Maksma", nõustute isikuandmete töötlemisega ja nõustute
+                                <a href="#" class="maksma__politik-link">privaatsuspoliitikaga</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="maksma__foto">
+                        <img src="../assets/img/icons/kuulutus.png" alt="" class="maksma__img">
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 

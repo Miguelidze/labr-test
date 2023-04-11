@@ -1,10 +1,10 @@
 .partners {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  align-items: center;
   margin-bottom: 140px;
   @media screen and (max-width: $tabletWidth) {
     margin-bottom: 80px;
+    flex-direction: column;
   }
   // .partners__wrap
 
@@ -17,36 +17,41 @@
     border: 1px solid $fontColorDefault;
     border-radius: 10px;
     padding: 25px;
+    width: 100%;
     position: relative;
-    margin: auto;
+    margin: 0 110px;
     @media screen and (min-width: $largeWidth) {
-      width: 1280px;
+      width: $desktopWidth;
+      margin: 0 110px;
     }
-    @media screen and (min-width: $desktopWidth) and (max-width: $largeWidth) {
-        width: 1200px;
-    }
-    @media screen and (min-width: $smDesktopWidth) and (max-width: $desktopWidth) {
-        width: 1100px;
-    }
-    @media screen and (min-width: $tabletWidth) and (max-width: $smDesktopWidth) {
-        width: 950px;
-    }
+    // @media screen and (min-width: $desktopWidth) and (max-width: $largeWidth) {
+    //   margin: 0 80px;
+    //   width: 100%;
+    // }
+    // @media screen and (max-width: $desktopWidth) {
+    //   width: 100%;
+    //   margin: 0 80px;
+    // }
+    // @media screen and (max-width: $smDesktopWidth) {
+    //   width: 100%;
+    //   margin: 0 20px;
+    // }
     @media screen and (max-width: $tabletWidth) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        column-gap: 10px;
-        justify-items: center;
-        width: min-content;
-        margin:0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      column-gap: 10px;
+      justify-items: center;
+      width: min-content;
+      margin: 0 auto;
     }
-    @media screen and (max-width:$phoneWidth){
-        display: flex;
-        justify-content: center;
+    @media screen and (max-width: $phoneWidth) {
+      display: flex;
+      justify-content: center;
     }
-    @media screen and (max-width:$smPhoneWidth){
-        margin: 0 10px;
-        padding: 10px;
+    @media screen and (max-width: $smPhoneWidth) {
+      margin: 0 10px;
+      padding: 10px;
     }
   }
 
@@ -54,11 +59,11 @@
 
   &__item {
     width: min-content;
-    height:min-content;
-    @media screen and (max-width:$phoneWidth){
-        &:not(:last-child){
-            margin-bottom: 15px;
-        }
+    height: min-content;
+    @media screen and (max-width: $phoneWidth) {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
     }
   }
 
@@ -75,33 +80,53 @@
     height: 100%;
   }
 }
-#item-part1{
-    @media screen and (max-width:$tabletWidth){
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
+.partners-container {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: $largeWidth) {
+    width: $desktopWidth;
+    margin: auto;
+  }
+  @media screen and (min-width: $desktopWidth) and (max-width: $largeWidth) {
+    margin: 0 80px;
+    width: 100%;
+  }
+  @media screen and (max-width: $desktopWidth) {
+    width: 100%;
+    margin: 0 80px;
+  }
+  @media screen and (max-width: $smDesktopWidth) {
+    width: 100%;
+    margin: 0 20px;
+  }
 }
-#item-part2{
-    @media screen and (max-width:$tabletWidth){
-        grid-column: 1/2;
-        grid-row: 2/4;
-    }
+#item-part1 {
+  @media screen and (max-width: $tabletWidth) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 }
-#item-part3{
-    @media screen and (max-width:$tabletWidth){
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }   
+#item-part2 {
+  @media screen and (max-width: $tabletWidth) {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
 }
-#item-part4{
-    @media screen and (max-width:$tabletWidth){
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
+#item-part3 {
+  @media screen and (max-width: $tabletWidth) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 }
-#item-part5{
-    @media screen and (max-width:$tabletWidth){
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
+#item-part4 {
+  @media screen and (max-width: $tabletWidth) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+#item-part5 {
+  @media screen and (max-width: $tabletWidth) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
 }

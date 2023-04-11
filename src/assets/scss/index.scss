@@ -80,6 +80,9 @@ input {
   line-height: 26px;
   padding-left: 20px;
   color: $fontColorPrimary;
+  & > span {
+    display: none;
+  }
 }
 div.hidden {
   display: none;
